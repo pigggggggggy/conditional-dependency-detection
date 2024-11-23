@@ -1,0 +1,44 @@
+{
+  "OPTIONS": {
+    "RESOURCE_CONTROL": false,
+    "COMMIT_SERIES": false,
+    "AST_DIFFS_REUSE": false,
+    "PROGRESS_RESET": true,
+    "VERBOSE": false,
+    "CHANGE_LOCATION_ONLY": false,
+    "SNAPSHOT_MODE": true,
+    "EXECUTE_CALLABLES": true,
+    "PROJECT_MODEL": true,
+    "INITIALIZE_WITH_BUILD_COMMITS": false
+  },
+  "RELATIVE_RESULT_PATH": "test_output/etlegacy",
+  "PROJECT": "etlegacy",
+  "REPOSITORY": "https://github.com/etlegacy/etlegacy",
+  "BRANCH": "master",
+  "COMMITS": [
+    "fe25c0fcb48b262f1df52d81a20833a7cf06e1ce"
+  ],
+  "EXCLUDED_COMMITS": [
+  ],
+  "BUILD_TECHNOLOGY": "cmake",
+  "ENTRY_FILES": ["CMakeLists.txt"],
+  "PROJECT_SPECIFIC_INCLUDES": {
+    "cmake": {
+      "starts_with": [],
+      "ends_with": ["CMakeLists.txt", ".cmake"]
+    }
+  },
+  "PROJECT_SPECIFIC_EXCLUDES": {
+    "cmake": {
+      "starts_with": ["libs/"],
+      "ends_with": [".h.cmake", ".pc.cmake"]
+    }
+  },
+  "PROJECT_SPECIFIC_PATH_RESOLUTION": [
+    {
+      "caller_file_path": "SAMPLE/PATH.cmake",
+      "callee_file_path": "${CLIENT_SRC_DIR}",
+      "callee_resolved_path": ["SAMPLE/RESOLUTION/PATH/"]
+    }
+  ]
+}
