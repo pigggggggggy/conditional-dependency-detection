@@ -1,0 +1,577 @@
+[
+    {
+        "name": "ZLIB",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(ZLIB REQUIRED)"
+        ]
+    },
+    {
+        "name": "PyCXX",
+        "type": "find_package",
+        "reachability": "['NOT FREECAD_LIBPACK_USE OR FREECAD_LIBPACK_CHECKFILE_CLBUNDLER OR FREECAD_LIBPACK_CHECKFILE_VERSION']",
+        "code": [
+            "find_package(PyCXX REQUIRED)"
+        ]
+    },
+    {
+        "name": "NETGEN",
+        "type": "find_package",
+        "reachability": "['NOT FREECAD_LIBPACK_USE OR FREECAD_LIBPACK_CHECKFILE_CLBUNDLER OR FREECAD_LIBPACK_CHECKFILE_VERSION', 'BUILD_FEM_NETGEN']",
+        "code": [
+            "find_package(NETGEN)"
+        ]
+    },
+    {
+        "name": "Qt${FREECAD_QT_MAJOR_VERSION}",
+        "type": "find_package",
+        "reachability": "['NOT IS_SUB_PROJECT'] OR ['NOT FREECAD_LIBPACK_USE OR FREECAD_LIBPACK_CHECKFILE_CLBUNDLER OR FREECAD_LIBPACK_CHECKFILE_VERSION']",
+        "code": [
+            "find_package(Qt${FREECAD_QT_MAJOR_VERSION} COMPONENTS Core Designer Widgets REQUIRED)",
+            "find_package(Qt${FREECAD_QT_MAJOR_VERSION} REQUIRED COMPONENTS ${COMPONENT})"
+        ]
+    },
+    {
+        "name": "Rift",
+        "type": "find_package",
+        "reachability": "['BUILD_VR']",
+        "code": [
+            "find_package(Rift)"
+        ]
+    },
+    {
+        "name": "Threads",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Threads REQUIRED)"
+        ]
+    },
+    {
+        "name": "XercesC",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(XercesC REQUIRED PATHS ${FREECAD_LIBPACK_DIR}/cmake NO_DEFAULT_PATH)",
+            "find_package(XercesC REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "zipios"
+        ],
+        "type": "find_library",
+        "reachability": "['FREECAD_USE_EXTERNAL_ZIPIOS']",
+        "code": [
+            "find_library(ZIPIOS_LIBRARY zipios)"
+        ]
+    },
+    {
+        "name": "PkgConfig",
+        "type": "find_package",
+        "reachability": "['BUILD_CLOUD', 'APPLE']",
+        "code": [
+            "find_package(PkgConfig REQUIRED)"
+        ]
+    },
+    {
+        "name": "OpenSSL",
+        "type": "find_package",
+        "reachability": "['BUILD_CLOUD', 'NOT (APPLE)', 'NOT (WIN32 AND LIBPACK_FOUND)', '']",
+        "code": [
+            "find_package(OpenSSL REQUIRED)"
+        ]
+    },
+    {
+        "name": "CURL",
+        "type": "find_package",
+        "reachability": "['BUILD_CLOUD', 'NOT (WIN32)', '']",
+        "code": [
+            "find_package(CURL REQUIRED)"
+        ]
+    },
+    {
+        "name": "OpenMP",
+        "type": "find_package",
+        "reachability": "['BUILD_FEM']",
+        "code": [
+            "find_package(OpenMP 4.0)"
+        ]
+    },
+    {
+        "name": "Boost",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Boost COMPONENTS python${BOOST_PY_SUFFIX})",
+            "find_package(Boost COMPONENTS filesystem program_options regex system thread date_time REQUIRED PATHS ${FREECAD_LIBPACK_DIR}/lib/cmake NO_DEFAULT_PATH)",
+            "find_package(Boost COMPONENTS python${PYTHON_VERSION_MAJOR})",
+            "find_package(Boost COMPONENTS python REQUIRED)",
+            "find_package(Boost COMPONENTS signals REQUIRED)"
+        ]
+    },
+    {
+        "name": "Microsoft.GSL",
+        "type": "find_package",
+        "reachability": "['BUILD_START', 'NOT (EXISTS \"${CMAKE_SOURCE_DIR}/src/3rdParty/GSL/include\")', '']",
+        "code": [
+            "find_package(Microsoft.GSL)"
+        ]
+    },
+    {
+        "name": "Coin3DDoc",
+        "type": "find_package",
+        "reachability": "['DOXYGEN_FOUND']",
+        "code": [
+            "find_package(Coin3DDoc)"
+        ]
+    },
+    {
+        "name": "Qt5X11Extras",
+        "type": "find_package",
+        "reachability": "['BUILD_GUI', 'SPNAV_FOUND', 'SPNAV_USE_X11', 'FREECAD_QT_MAJOR_VERSION EQUAL 5 AND UNIX AND NOT APPLE']",
+        "code": [
+            "find_package(Qt5X11Extras REQUIRED)"
+        ]
+    },
+    {
+        "name": "X11",
+        "type": "find_package",
+        "reachability": "['BUILD_GUI', 'SPNAV_FOUND', 'SPNAV_USE_X11']",
+        "code": [
+            "find_package(X11 QUIET)"
+        ]
+    },
+    {
+        "name": "GTest",
+        "type": "find_package",
+        "reachability": "['ENABLE_DEVELOPER_TESTS', 'NOT (EXISTS \"${CMAKE_SOURCE_DIR}/tests/lib/googletest\")', '']",
+        "code": [
+            "find_package(GTest)"
+        ]
+    },
+    {
+        "name": "VTK",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(VTK REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "SMESH"
+        ],
+        "type": "find_library",
+        "reachability": "['CMAKE_COMPILER_IS_GNUCC']",
+        "code": [
+            "FIND_LIBRARY(SMESH_LIBRARY SMESH)"
+        ]
+    },
+    {
+        "name": [
+            "spnav",
+            "libspnav"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX']",
+        "code": [
+            "FIND_LIBRARY(SPNAV_LIBRARY NAMES spnav libspnav)"
+        ]
+    },
+    {
+        "name": "Python3",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Python3 COMPONENTS Interpreter Development REQUIRED)"
+        ]
+    },
+    {
+        "name": "Qt6",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Qt6 REQUIRED PATHS ${FREECAD_LIBPACK_DIR}/lib/cmake NO_DEFAULT_PATH)"
+        ]
+    },
+    {
+        "name": "yaml-cpp",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(yaml-cpp REQUIRED PATHS ${FREECAD_LIBPACK_DIR}/lib/cmake NO_DEFAULT_PATH)"
+        ]
+    },
+    {
+        "name": "Coin",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Coin REQUIRED PATHS ${FREECAD_LIBPACK_DIR}/lib/cmake NO_DEFAULT_PATH)"
+        ]
+    },
+    {
+        "name": "freetype",
+        "type": "find_package",
+        "reachability": "['FREECAD_USE_FREETYPE']",
+        "code": [
+            "find_package(freetype REQUIRED PATHS ${FREECAD_LIBPACK_DIR}/lib/cmake NO_DEFAULT_PATH)"
+        ]
+    },
+    {
+        "name": [
+            "xerces-c_3"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(XercesC_LIBRARY_RELEASE xerces-c_3 \"${FREECAD_LIBPACK_DIR}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "xerces-c_3D"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(XercesC_LIBRARY_DEBUG xerces-c_3D \"${FREECAD_LIBPACK_DIR}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "coin4"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(COIN3D_LIBRARY_RELEASE coin4 \"${FREECAD_LIBPACK_DIR}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "coin4d"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(COIN3D_LIBRARY_DEBUG coin4d \"${FREECAD_LIBPACK_DIR}/lib\")"
+        ]
+    },
+    {
+        "name": "OCE",
+        "type": "find_package",
+        "reachability": "['NOT DEFINED OCE_DIR', '${CMAKE_SYSTEM_NAME} MATCHES \"Darwin\"', 'DEFINED MACPORTS_PREFIX'] OR ['NOT DEFINED OCE_DIR', '${CMAKE_SYSTEM_NAME} MATCHES \"Darwin\"', 'NOT (DEFINED MACPORTS_PREFIX)', 'DEFINED HOMEBREW_PREFIX'] OR ['${FREECAD_USE_OCC_VARIANT} MATCHES \"Community Edition\"']",
+        "code": [
+            "find_package(OCE QUIET HINTS ${HOMEBREW_PREFIX}/Cellar/oce/*)",
+            "find_package(OCE QUIET HINTS ${MACPORTS_PREFIX}/Library/Frameworks)",
+            "find_package(OCE QUIET)"
+        ]
+    },
+    {
+        "name": "OpenCASCADE",
+        "type": "find_package",
+        "reachability": "['NOT (OCE_FOUND)', 'OCE_FOUND', 'NOT OCCT_CMAKE_FALLBACK']",
+        "code": [
+            "find_package(OpenCASCADE CONFIG QUIET)"
+        ]
+    },
+    {
+        "name": [
+            "TKernel"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (OCE_FOUND)', 'OCE_FOUND', 'NOT (OpenCASCADE_FOUND)', 'OpenCASCADE_FOUND', 'WIN32', 'CYGWIN OR MINGW'] OR ['NOT (OCE_FOUND)', 'OCE_FOUND', 'NOT (OpenCASCADE_FOUND)', 'OpenCASCADE_FOUND', 'WIN32', 'NOT (CYGWIN OR MINGW)', 'CYGWIN OR MINGW'] OR ['NOT (OCE_FOUND)', 'OCE_FOUND', 'NOT (OpenCASCADE_FOUND)', 'OpenCASCADE_FOUND', 'NOT (WIN32)', 'WIN32']",
+        "code": [
+            "FIND_LIBRARY(OCC_LIBRARY TKernel /usr/lib /usr/local/lib /opt/opencascade/lib)",
+            "FIND_LIBRARY(OCC_LIBRARY TKernel \"[HKEY_LOCAL_MACHINE\\\\SOFTWARE\\\\SIM\\\\OCC\\\\2;Installation Path]/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "cv",
+            "opencv"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OpenCV_CV_LIBRARY NAMES cv opencv PATHS ${OpenCV_ROOT_DIR} PATH_SUFFIXES ${OpenCV_LIBDIR_SUFFIXES})"
+        ]
+    },
+    {
+        "name": [
+            "cvaux"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OpenCV_CVAUX_LIBRARY NAMES cvaux PATHS ${OpenCV_ROOT_DIR} PATH_SUFFIXES ${OpenCV_LIBDIR_SUFFIXES})"
+        ]
+    },
+    {
+        "name": [
+            "cvcam"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OpenCV_CVCAM_LIBRARY NAMES cvcam PATHS ${OpenCV_ROOT_DIR} PATH_SUFFIXES ${OpenCV_LIBDIR_SUFFIXES})"
+        ]
+    },
+    {
+        "name": [
+            "cvhaartraining"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OpenCV_CVHAARTRAINING_LIBRARY NAMES cvhaartraining PATHS ${OpenCV_ROOT_DIR} PATH_SUFFIXES ${OpenCV_LIBDIR_SUFFIXES})"
+        ]
+    },
+    {
+        "name": [
+            "cxcore"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OpenCV_CXCORE_LIBRARY NAMES cxcore PATHS ${OpenCV_ROOT_DIR} PATH_SUFFIXES ${OpenCV_LIBDIR_SUFFIXES})"
+        ]
+    },
+    {
+        "name": [
+            "cxts"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OpenCV_CXTS_LIBRARY NAMES cxts PATHS ${OpenCV_ROOT_DIR} PATH_SUFFIXES ${OpenCV_LIBDIR_SUFFIXES})"
+        ]
+    },
+    {
+        "name": [
+            "highgui"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OpenCV_HIGHGUI_LIBRARY NAMES highgui PATHS ${OpenCV_ROOT_DIR} PATH_SUFFIXES ${OpenCV_LIBDIR_SUFFIXES})"
+        ]
+    },
+    {
+        "name": [
+            "ml"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OpenCV_ML_LIBRARY NAMES ml PATHS ${OpenCV_ROOT_DIR} PATH_SUFFIXES ${OpenCV_LIBDIR_SUFFIXES})"
+        ]
+    },
+    {
+        "name": [
+            "trs"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OpenCV_TRS_LIBRARY NAMES trs PATHS ${OpenCV_ROOT_DIR} PATH_SUFFIXES ${OpenCV_LIBDIR_SUFFIXES})"
+        ]
+    },
+    {
+        "name": "PySide6",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(PySide6 CONFIG QUIET)"
+        ]
+    },
+    {
+        "name": "Qt5",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "FIND_PACKAGE(Qt5 COMPONENTS Core Widgets)",
+            "find_package(Qt5)"
+        ]
+    },
+    {
+        "name": [
+            "libovr64"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OCULUS_LIBRARY_RELEASE libovr64 PATHS ${OCULUS_LIBRARY_SEARCH_RELEASE_DIRS})"
+        ]
+    },
+    {
+        "name": [
+            "libovr64d"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(OCULUS_LIBRARY_DEBUG libovr64d PATHS ${OCULUS_LIBRARY_SEARCH_DEBUG_DIRS})"
+        ]
+    },
+    {
+        "name": "Shiboken6",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Shiboken6 CONFIG QUIET)"
+        ]
+    },
+    {
+        "name": [
+            "medC"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(MEDFILE_C_LIBRARIES NAMES medC)"
+        ]
+    },
+    {
+        "name": [
+            "med"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(MEDFILE_F_LIBRARIES NAMES med)"
+        ]
+    },
+    {
+        "name": "Netgen",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Netgen CONFIG)"
+        ]
+    },
+    {
+        "name": [
+            "UNKNOWN_NAME"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (Netgen_FOUND)', '', 'WIN32']",
+        "code": [
+            "FIND_LIBRARY(NGLIB ${it} PATHS ${NETGEN_LIBDIR})"
+        ]
+    },
+    {
+        "name": [
+            "${it}d"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (Netgen_FOUND)', '', 'WIN32']",
+        "code": [
+            "FIND_LIBRARY(NGLIBD ${it}d PATHS ${NETGEN_LIBDIR})"
+        ]
+    },
+    {
+        "name": [
+            "nglib"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (Netgen_FOUND)', '', 'NOT (WIN32)', 'DEFINED MACPORTS_PREFIX OR DEFINED HOMEBREW_PREFIX']",
+        "code": [
+            "FIND_LIBRARY(NGLIB_LIBNGLIB nglib PATHS ${NETGEN_LIBDIR} /usr/lib /usr/lib64 /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "mesh",
+            "ngmesh"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (Netgen_FOUND)', '', 'NOT (WIN32)', 'DEFINED MACPORTS_PREFIX OR DEFINED HOMEBREW_PREFIX']",
+        "code": [
+            "FIND_LIBRARY(NGLIB_LIBMESH NAMES mesh ngmesh PATHS ${NETGEN_LIBDIR} /usr/lib /usr/lib64 /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "occ",
+            "ngocc"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (Netgen_FOUND)', '', 'NOT (WIN32)', 'DEFINED MACPORTS_PREFIX OR DEFINED HOMEBREW_PREFIX']",
+        "code": [
+            "FIND_LIBRARY(NGLIB_LIBOCC NAMES occ ngocc PATHS ${NETGEN_LIBDIR} /usr/lib /usr/lib64 /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "interface",
+            "nginterface"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (Netgen_FOUND)', '', 'NOT (WIN32)', 'DEFINED MACPORTS_PREFIX OR DEFINED HOMEBREW_PREFIX']",
+        "code": [
+            "FIND_LIBRARY(NGLIB_LIBINTERFACE NAMES interface nginterface PATHS ${NETGEN_LIBDIR} /usr/lib /usr/lib64 /usr/local/lib)"
+        ]
+    },
+    {
+        "name": "SWIG",
+        "type": "find_package",
+        "reachability": "['BUILD_PYTHON_BINDINGS']",
+        "code": [
+            "find_package(SWIG REQUIRED)"
+        ]
+    },
+    {
+        "name": "PythonLibs",
+        "type": "find_package",
+        "reachability": "['NOT DEFINED PYTHON_VERSION_STRING'] OR ['NOT (NOT DEFINED PYTHON_VERSION_STRING)', 'NOT DEFINED PYTHON_VERSION_STRING'] OR ['BUILD_PYTHON_BINDINGS']",
+        "code": [
+            "find_package(PythonLibs REQUIRED)",
+            "find_package(PythonLibs ${PYTHON_VERSION_STRING} EXACT)",
+            "find_package(PythonLibs)"
+        ]
+    },
+    {
+        "name": "QT",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Xml REQUIRED)"
+        ]
+    },
+    {
+        "name": "Qt${QT_VERSION_MAJOR}",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Xml REQUIRED)"
+        ]
+    },
+    {
+        "name": "Qt5Widgets",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Qt5Widgets REQUIRED)"
+        ]
+    },
+    {
+        "name": "Qt5Gui",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Qt5Gui REQUIRED)"
+        ]
+    },
+    {
+        "name": "PythonInterp",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(PythonInterp REQUIRED)"
+        ]
+    }
+]

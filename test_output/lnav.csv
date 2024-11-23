@@ -1,0 +1,12 @@
+num,name,reachability,type,non_empty_count,non_empty_percentage
+,,,,1,10.00%
+1,SQLite3,,find_package,,
+2,BZip2,,find_package,,
+3,LibArchive,,find_package,,
+4,ZLIB,,find_package,,
+5,pcre,,find_package,,
+6,readline,,find_package,,
+7,ncurses,,find_package,,
+8,CURL,,find_package,,
+9,Python3,['BUILD_MCSS_DOCS'],find_package,,
+10,util,,check_library_exists,,

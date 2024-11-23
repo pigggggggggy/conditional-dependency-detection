@@ -1,0 +1,497 @@
+[
+    {
+        "name": "OpenGL",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "FIND_PACKAGE(OpenGL)",
+            "find_package(OpenGL REQUIRED)",
+            "find_package(OpenGL)"
+        ]
+    },
+    {
+        "name": "Boost",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Boost REQUIRED)"
+        ]
+    },
+    {
+        "name": "Gettext",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Gettext REQUIRED)"
+        ]
+    },
+    {
+        "name": "PkgConfig",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(PkgConfig REQUIRED)"
+        ]
+    },
+    {
+        "name": "Protobuf",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Protobuf REQUIRED)"
+        ]
+    },
+    {
+        "name": "FFTW3",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(FFTW3)"
+        ]
+    },
+    {
+        "name": "ALSA",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(ALSA)"
+        ]
+    },
+    {
+        "name": "X11",
+        "type": "find_package",
+        "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM'] OR ['NOT APPLE']",
+        "code": [
+            "FIND_PACKAGE(X11)",
+            "find_package(X11)"
+        ]
+    },
+    {
+        "name": [
+            "libprotobuf.a"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(PROTOBUF_STATIC_LIBRARY libprotobuf.a libprotobuf)"
+        ]
+    },
+    {
+        "name": "CDIO",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(CDIO libcdio)"
+        ]
+    },
+    {
+        "name": "CHROMAPRINT",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(CHROMAPRINT REQUIRED libchromaprint)"
+        ]
+    },
+    {
+        "name": "GIO",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(GIO gio-2.0)"
+        ]
+    },
+    {
+        "name": "GLIB",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(GLIB REQUIRED glib-2.0)"
+        ]
+    },
+    {
+        "name": "GOBJECT",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(GOBJECT REQUIRED gobject-2.0)"
+        ]
+    },
+    {
+        "name": "GSTREAMER",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0)"
+        ]
+    },
+    {
+        "name": "GSTREAMER_APP",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(GSTREAMER_APP REQUIRED gstreamer-app-1.0)"
+        ]
+    },
+    {
+        "name": "GSTREAMER_AUDIO",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(GSTREAMER_AUDIO REQUIRED gstreamer-audio-1.0)"
+        ]
+    },
+    {
+        "name": "GSTREAMER_BASE",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(GSTREAMER_BASE REQUIRED gstreamer-base-1.0)"
+        ]
+    },
+    {
+        "name": "GSTREAMER_TAG",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(GSTREAMER_TAG REQUIRED gstreamer-tag-1.0)"
+        ]
+    },
+    {
+        "name": "GSTREAMER_PBUTILS",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(GSTREAMER_PBUTILS REQUIRED gstreamer-pbutils-1.0)"
+        ]
+    },
+    {
+        "name": "LIBGPOD",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(LIBGPOD libgpod-1.0>=0.7.92)"
+        ]
+    },
+    {
+        "name": "LIBMTP",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(LIBMTP libmtp>=1.0)"
+        ]
+    },
+    {
+        "name": "LIBMYGPO_QT5",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(LIBMYGPO_QT5 libmygpo-qt5>=1.0.9)"
+        ]
+    },
+    {
+        "name": "LIBPULSE",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(LIBPULSE libpulse)"
+        ]
+    },
+    {
+        "name": "LIBXML",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(LIBXML libxml-2.0)"
+        ]
+    },
+    {
+        "name": "TAGLIB",
+        "type": "pkg_check_modules",
+        "reachability": "",
+        "code": [
+            "pkg_check_modules(TAGLIB taglib)"
+        ]
+    },
+    {
+        "name": "ZLIB",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(ZLIB REQUIRED)",
+            "find_package(ZLIB)"
+        ]
+    },
+    {
+        "name": [
+            "lastfm5"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(LASTFM5_LIBRARIES lastfm5)"
+        ]
+    },
+    {
+        "name": "Qt5",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Qt5 REQUIRED COMPONENTS WinExtras)",
+            "find_package(Qt5 REQUIRED COMPONENTS MacExtras)",
+            "find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS X11Extras)",
+            "find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Concurrent Widgets Network Sql Xml OpenGL Test)"
+        ]
+    },
+    {
+        "name": "Qt5DBus",
+        "type": "find_package",
+        "reachability": "['HAVE_X11']",
+        "code": [
+            "find_package(Qt5DBus ${QT_MIN_VERSION})"
+        ]
+    },
+    {
+        "name": "Qt5LinguistTools",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Qt5LinguistTools CONFIG)"
+        ]
+    },
+    {
+        "name": [
+            "Sparkle"
+        ],
+        "type": "find_library",
+        "reachability": "['APPLE']",
+        "code": [
+            "find_library(SPARKLE Sparkle)"
+        ]
+    },
+    {
+        "name": "Threads",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Threads)"
+        ]
+    },
+    {
+        "name": "LIBPROJECTM",
+        "type": "pkg_check_modules",
+        "reachability": "['HAVE_VISUALISATIONS', 'USE_SYSTEM_PROJECTM']",
+        "code": [
+            "pkg_check_modules(LIBPROJECTM libprojectM)"
+        ]
+    },
+    {
+        "name": [
+            "Qt5Solutions_SingleApplication-2.6"
+        ],
+        "type": "find_library",
+        "reachability": "['USE_SYSTEM_QTSINGLEAPPLICATION']",
+        "code": [
+            "find_library(QTSINGLEAPPLICATION_LIBRARIES Qt5Solutions_SingleApplication-2.6)"
+        ]
+    },
+    {
+        "name": [
+            "Qt5Solutions_SingleCoreApplication-2.6"
+        ],
+        "type": "find_library",
+        "reachability": "['USE_SYSTEM_QTSINGLEAPPLICATION']",
+        "code": [
+            "find_library(QTSINGLECOREAPPLICATION_LIBRARIES Qt5Solutions_SingleCoreApplication-2.6)"
+        ]
+    },
+    {
+        "name": [
+            "QtSolutions_IOCompressor-2.3"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(QTIOCOMPRESSOR_LIBRARIES QtSolutions_IOCompressor-2.3)"
+        ]
+    },
+    {
+        "name": [
+            "QxtWidgets-qt5"
+        ],
+        "type": "find_library",
+        "reachability": "['USE_SYSTEM_QXT']",
+        "code": [
+            "find_library(QXT_LIBRARIES QxtWidgets-qt5)"
+        ]
+    },
+    {
+        "name": [
+            "gmock"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(GMOCK_LIBRARIES gmock)"
+        ]
+    },
+    {
+        "name": [
+            "gtest"
+        ],
+        "type": "find_library",
+        "reachability": "['GMOCK_INCLUDE_DIRS']",
+        "code": [
+            "find_library(GTEST_LIBRARIES gtest)"
+        ]
+    },
+    {
+        "name": "CppUnit",
+        "type": "find_package",
+        "reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '', 'BUILD_TESTS AND NOT BUILD_SHARED_LIBS']",
+        "code": [
+            "find_package(CppUnit)"
+        ]
+    },
+    {
+        "name": "GLEW",
+        "type": "pkg_check_modules",
+        "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM']",
+        "code": [
+            "pkg_check_modules(GLEW glew)"
+        ]
+    },
+    {
+        "name": [
+            "glew32.dll",
+            "glew",
+            "GLEW",
+            "glew32"
+        ],
+        "type": "find_library",
+        "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM', 'NOT (USE_NATIVE_GLEW)', 'USE_NATIVE_GLEW']",
+        "code": [
+            "find_library(GLEW_LIBRARIES NAMES glew32.dll glew GLEW glew32)"
+        ]
+    },
+    {
+        "name": "FREETYPE2",
+        "type": "pkg_check_modules",
+        "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM', 'USE_FTGL']",
+        "code": [
+            "pkg_check_modules(FREETYPE2 freetype2)"
+        ]
+    },
+    {
+        "name": "FTGL",
+        "type": "pkg_check_modules",
+        "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM', 'USE_FTGL']",
+        "code": [
+            "pkg_check_modules(FTGL ftgl)"
+        ]
+    },
+    {
+        "name": [
+            "sqlite3"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(SQLITE_LIBRARIES sqlite3)"
+        ]
+    },
+    {
+        "name": "Backtrace",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Backtrace)"
+        ]
+    },
+    {
+        "name": [
+            "fftw3",
+            "libfftw",
+            "libfftw3",
+            "libfftw3-3"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(FFTW3_FFTW_LIBRARY NAMES fftw3 libfftw libfftw3 libfftw3-3 PATHS ${FFTW3_POSSIBLE_LIBRARY_PATH})"
+        ]
+    },
+    {
+        "name": [
+            "fftwf3",
+            "fftw3f",
+            "fftwf",
+            "libfftwf",
+            "libfftwf3",
+            "libfftw3f-3"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(FFTW3_FFTWF_LIBRARY NAMES fftwf3 fftw3f fftwf libfftwf libfftwf3 libfftw3f-3 PATHS ${FFTW3_POSSIBLE_LIBRARY_PATH})"
+        ]
+    },
+    {
+        "name": [
+            "fftwl3",
+            "fftw3l",
+            "fftwl",
+            "libfftwl",
+            "libfftwl3",
+            "libfftw3l-3"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(FFTW3_FFTWL_LIBRARY NAMES fftwl3 fftw3l fftwl libfftwl libfftwl3 libfftw3l-3 PATHS ${FFTW3_POSSIBLE_LIBRARY_PATH})"
+        ]
+    },
+    {
+        "name": [
+            "fftw_sse2",
+            "fftw3_sse2",
+            "libfftw_sse2",
+            "libfftw3_sse2"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(FFTW3_FFTW_SSE2_LIBRARY NAMES fftw_sse2 fftw3_sse2 libfftw_sse2 libfftw3_sse2 PATHS ${FFTW3_POSSIBLE_LIBRARY_PATH})"
+        ]
+    },
+    {
+        "name": [
+            "fftwf_sse",
+            "fftwf3_sse",
+            "libfftwf_sse",
+            "libfftwf3_sse"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(FFTW3_FFTWF_SSE_LIBRARY NAMES fftwf_sse fftwf3_sse libfftwf_sse libfftwf3_sse PATHS ${FFTW3_POSSIBLE_LIBRARY_PATH})"
+        ]
+    },
+    {
+        "name": "QJSON",
+        "type": "pkg_check_modules",
+        "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES', 'NOT WIN32']",
+        "code": [
+            "pkg_check_modules(QJSON REQUIRED QJson>=0.5)"
+        ]
+    },
+    {
+        "name": [
+            "qjson"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES']",
+        "code": [
+            "find_library(QJSON_LIBRARIES NAMES qjson PATHS ${QJSON_LIBRARY_DIRS} ${LIB_INSTALL_DIR} ${KDE4_LIB_DIR})"
+        ]
+    }
+]

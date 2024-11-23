@@ -1,0 +1,121 @@
+[
+    {
+        "name": [
+            "omp",
+            "libomp"
+        ],
+        "type": "find_library",
+        "reachability": "['USE_OPENMP', 'APPLE']",
+        "code": [
+            "find_library(OPENMP_LIBRARIES REQUIRED NAMES omp libomp HINTS /opt/homebrew/Cellar/libomp/*/lib/)"
+        ]
+    },
+    {
+        "name": "Protobuf",
+        "type": "find_package",
+        "reachability": "['NOT (BUILD_PROTOBUF)', '', 'NOT (USE_CAFFE OR USE_TORCH)', ''] OR ['NOT (BUILD_PROTOBUF)', '', 'USE_CAFFE OR USE_TORCH']",
+        "code": [
+            "find_package(Protobuf REQUIRED 3.11.4)",
+            "find_package(Protobuf REQUIRED)"
+        ]
+    },
+    {
+        "name": "absl",
+        "type": "find_package",
+        "reachability": "['NOT (BUILD_PROTOBUF)', '', '${Protobuf_VERSION} VERSION_GREATER_EQUAL 4.22.0', 'NOT TARGET absl::strings']",
+        "code": [
+            "find_package(absl CONFIG)"
+        ]
+    },
+    {
+        "name": "PkgConfig",
+        "type": "find_package",
+        "reachability": "['NOT (USE_TF)', 'NOT (USE_CAFFE2)', '']",
+        "code": [
+            "find_package(PkgConfig)"
+        ]
+    },
+    {
+        "name": "spdlog",
+        "type": "find_package",
+        "reachability": "['NOT (BUILD_SPDLOG)', '']",
+        "code": [
+            "find_package(spdlog 1.8.2 CONFIG REQUIRED)"
+        ]
+    },
+    {
+        "name": "Boost",
+        "type": "find_package",
+        "reachability": "['NOT (USE_BOOST_BACKTRACE)', ''] OR ['USE_BOOST_BACKTRACE']",
+        "code": [
+            "find_package(Boost 1.54 REQUIRED COMPONENTS filesystem thread system iostreams stacktrace_backtrace)",
+            "find_package(Boost 1.54 REQUIRED COMPONENTS filesystem thread system iostreams)"
+        ]
+    },
+    {
+        "name": "CUDA",
+        "type": "find_package",
+        "reachability": "['NOT (USE_CPU_ONLY)', '']",
+        "code": [
+            "find_package(CUDA 5.5 QUIET)"
+        ]
+    },
+    {
+        "name": "CUDNN",
+        "type": "find_package",
+        "reachability": "['USE_CUDNN']",
+        "code": [
+            "find_package(CUDNN REQUIRED)"
+        ]
+    },
+    {
+        "name": "OpenCV",
+        "type": "find_package",
+        "reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', ''] OR ['USE_OPENCV_VERSION STREQUAL \"\"'] OR ['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+        "code": [
+            "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
+            "find_package(OpenCV 3 QUIET COMPONENTS ${OPENCV_MODULES})",
+            "find_package(OpenCV 4 QUIET COMPONENTS ${OPENCV_MODULES})",
+            "find_package(OpenCV 2 REQUIRED COMPONENTS ${OPENCV_MODULES})"
+        ]
+    },
+    {
+        "name": [
+            "hdf5_cpp",
+            "hdf5_serial_cpp"
+        ],
+        "type": "find_library",
+        "reachability": "['USE_HDF5']",
+        "code": [
+            "find_library(HDF5_LIBRARY NAMES hdf5_cpp hdf5_serial_cpp)"
+        ]
+    },
+    {
+        "name": [
+            "libcudnn.so",
+            "#",
+            "libcudnn_static.a"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (USE_CPU_ONLY)', '', 'USE_CUDNN']",
+        "code": [
+            "find_library(CUDNN_LIBRARY NAMES libcudnn.so # libcudnn_static.a PATHS ${CUDNN_ROOT} $ENV{CUDNN_ROOT} ${CUDNN_INCLUDE} ${__libpath_hist} DOC \"Path to cuDNN library.\")"
+        ]
+    },
+    {
+        "name": "GTest",
+        "type": "find_package",
+        "reachability": "['BUILD_TESTS']",
+        "code": [
+            "find_package(GTest REQUIRED)"
+        ]
+    },
+    {
+        "name": "PythonInterp",
+        "type": "find_package",
+        "reachability": "['BUILD_TESTS']",
+        "code": [
+            "find_package(PythonInterp 3 REQUIRED)"
+        ]
+    }
+]

@@ -1,0 +1,475 @@
+[
+    {
+        "name": [
+            "Cocoa"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE']",
+        "code": [
+            "find_library(cocoa_libraries Cocoa REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "IOKit"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE']",
+        "code": [
+            "find_library(iokit_libraries IOKit REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "CoreFoundation"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE']",
+        "code": [
+            "find_library(core_foundation_libraries CoreFoundation REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "SystemConfiguration"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUNDLED_CURL']",
+        "code": [
+            "find_library(system_configuration_library SystemConfiguration REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "Security"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUNDLED_CURL AND FEATURE_SSL AND (NOT BUNDLED_OPENSSL AND NOT BUNDLED_WOLFSSL']",
+        "code": [
+            "find_library(security_library Security REQUIRED)"
+        ]
+    },
+    {
+        "name": "Iconv",
+        "type": "find_package",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUILD_CLIENT']",
+        "code": [
+            "find_package(Iconv REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "AudioToolbox"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUILD_CLIENT']",
+        "code": [
+            "find_library(audio_toolbox_library AudioToolbox REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "Carbon"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUILD_CLIENT']",
+        "code": [
+            "find_library(carbon_library Carbon REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "CoreAudio"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUILD_CLIENT']",
+        "code": [
+            "find_library(core_audio_library CoreAudio REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "CoreVideo"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUILD_CLIENT']",
+        "code": [
+            "find_library(core_video_library CoreVideo REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "ForceFeedback"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUILD_CLIENT']",
+        "code": [
+            "find_library(force_feedback_library ForceFeedback REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "OpenGL"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUILD_CLIENT']",
+        "code": [
+            "find_library(opengl_library OpenGL REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "CoreHaptics"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUILD_CLIENT', 'BUNDLED_SDL']",
+        "code": [
+            "find_library(core_haptics_library CoreHaptics REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "GameController"
+        ],
+        "type": "find_library",
+        "reachability": "['UNIX', 'NOT (CMAKE_SYSTEM MATCHES \"OpenBSD*\")', 'NOT (CMAKE_SYSTEM MATCHES \"FreeBSD\")', 'NOT (CMAKE_SYSTEM MATCHES \"NetBSD\")', 'NOT (ANDROID)', 'APPLE', 'BUILD_CLIENT', 'BUNDLED_SDL']",
+        "code": [
+            "find_library(game_controller_library GameController REQUIRED)"
+        ]
+    },
+    {
+        "name": "X11",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'NOT WIN32 AND NOT APPLE AND NOT ANDROID']",
+        "code": [
+            "find_package(X11 REQUIRED)"
+        ]
+    },
+    {
+        "name": "GLEW",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'FEATURE_RENDERER1 OR FEATURE_RENDERER2', 'NOT BUNDLED_GLEW']",
+        "code": [
+            "find_package(GLEW REQUIRED)"
+        ]
+    },
+    {
+        "name": "OpenGL",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'FEATURE_RENDERER1 OR FEATURE_RENDERER2']",
+        "code": [
+            "find_package(OpenGL REQUIRED COMPONENTS OpenGL)"
+        ]
+    },
+    {
+        "name": "GLES",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'FEATURE_RENDERER_GLES']",
+        "code": [
+            "find_package(GLES REQUIRED)"
+        ]
+    },
+    {
+        "name": "Vulkan",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'FEATURE_RENDERER_VULKAN']",
+        "code": [
+            "find_package(Vulkan REQUIRED)"
+        ]
+    },
+    {
+        "name": "SDL2",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'NOT BUNDLED_SDL']",
+        "code": [
+            "find_package(SDL2 2.0.8 REQUIRED)"
+        ]
+    },
+    {
+        "name": "JPEGTURBO",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'NOT BUNDLED_JPEG']",
+        "code": [
+            "find_package(JPEGTURBO)"
+        ]
+    },
+    {
+        "name": "JPEG",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'NOT BUNDLED_JPEG', 'NOT (JPEGTURBO_FOUND)', '']",
+        "code": [
+            "find_package(JPEG 8 REQUIRED)"
+        ]
+    },
+    {
+        "name": "Freetype",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'FEATURE_FREETYPE', 'NOT BUNDLED_FREETYPE']",
+        "code": [
+            "find_package(Freetype REQUIRED)"
+        ]
+    },
+    {
+        "name": "PNG",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'FEATURE_PNG', 'NOT BUNDLED_PNG']",
+        "code": [
+            "find_package(PNG REQUIRED)"
+        ]
+    },
+    {
+        "name": "OpenAL",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'FEATURE_OPENAL', 'NOT BUNDLED_OPENAL']",
+        "code": [
+            "find_package(OpenAL 1.14 REQUIRED)"
+        ]
+    },
+    {
+        "name": "Vorbis",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'FEATURE_OGG_VORBIS', 'NOT BUNDLED_OGG_VORBIS']",
+        "code": [
+            "find_package(Vorbis REQUIRED)"
+        ]
+    },
+    {
+        "name": "Theora",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT', 'FEATURE_THEORA', 'NOT BUNDLED_THEORA']",
+        "code": [
+            "find_package(Theora REQUIRED)"
+        ]
+    },
+    {
+        "name": "CURL",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT OR BUILD_SERVER', 'FEATURE_CURL', 'NOT BUNDLED_CURL']",
+        "code": [
+            "find_package(CURL REQUIRED)"
+        ]
+    },
+    {
+        "name": "OpenSSL",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT OR BUILD_SERVER', 'FEATURE_SSL', 'NOT BUNDLED_WOLFSSL AND NOT BUNDLED_OPENSSL', 'NOT APPLE AND NOT WIN32 AND NOT ANDROID']",
+        "code": [
+            "find_package(OpenSSL REQUIRED)"
+        ]
+    },
+    {
+        "name": "SQLite3",
+        "type": "find_package",
+        "reachability": "['BUILD_MOD', 'NOT ANDROID', 'FEATURE_LUASQL AND FEATURE_DBMS', 'NOT (BUNDLED_SQLITE3)', ''] OR ['BUILD_CLIENT OR BUILD_SERVER', 'FEATURE_DBMS', 'NOT BUNDLED_SQLITE3']",
+        "code": [
+            "find_package(SQLite3 REQUIRED)"
+        ]
+    },
+    {
+        "name": "Lua",
+        "type": "find_package",
+        "reachability": "['BUILD_MOD', 'FEATURE_LUA', 'NOT BUNDLED_LUA']",
+        "code": [
+            "find_package(Lua 5.4 REQUIRED)"
+        ]
+    },
+    {
+        "name": "ZLIB",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT OR BUILD_SERVER', 'NOT BUNDLED_ZLIB']",
+        "code": [
+            "find_package(ZLIB 1.2.8 REQUIRED)"
+        ]
+    },
+    {
+        "name": "MiniZip",
+        "type": "find_package",
+        "reachability": "['BUILD_CLIENT OR BUILD_SERVER', 'NOT BUNDLED_MINIZIP']",
+        "code": [
+            "find_package(MiniZip REQUIRED)"
+        ]
+    },
+    {
+        "name": "cJSON",
+        "type": "find_package",
+        "reachability": "['NOT BUNDLED_CJSON', 'NOT ANDROID']",
+        "code": [
+            "find_package(cJSON REQUIRED)"
+        ]
+    },
+    {
+        "name": "m",
+        "type": "check_library_exists",
+        "reachability": "['BUILD_MOD']",
+        "code": [
+            "check_library_exists(m pow \"\" LIBM)"
+        ]
+    },
+    {
+        "name": [
+            "UNKNOWN_NAME"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(LUA_LIBRARY NAMES ${_POSSIBLE_LUA_LIBRARY} HINTS $ENV{LUA_DIR} PATH_SUFFIXES lib64 lib PATHS ~/Library/Frameworks /Library/Frameworks /usr/local /usr /sw /opt/local /opt/csw /opt)",
+            "FIND_LIBRARY(SDL32MAIN_LIBRARY NAMES ${SDL32MAIN_NAMES})",
+            "FIND_LIBRARY(SDL32_LIBRARY NAMES ${SDL32_NAMES})"
+        ]
+    },
+    {
+        "name": [
+            "jpeg"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(JPEG_LIBRARY NAMES ${JPEG_NAMES} jpeg PATHS /usr/lib64 /usr/lib /usr/local/lib64 /usr/local/lib /sw/lib /opt/local/lib DOC \"The JPEG library\")"
+        ]
+    },
+    {
+        "name": [
+            "minizip"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(MINIZIP_LIBRARIES NAMES minizip)"
+        ]
+    },
+    {
+        "name": [
+            "SDL2"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(SDL2_LIBRARY_TEMP NAMES SDL2 HINTS $ENV{SDL2DIR} PATH_SUFFIXES lib64 lib PATHS /sw /opt/local /opt/csw /opt)"
+        ]
+    },
+    {
+        "name": [
+            "SDL2main"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT SDL2_BUILDING_LIBRARY', 'NOT ${SDL2_INCLUDE_DIR} MATCHES \".framework\"']",
+        "code": [
+            "FIND_LIBRARY(SDL2MAIN_LIBRARY NAMES SDL2main HINTS $ENV{SDL2DIR} PATH_SUFFIXES lib64 lib PATHS /sw /opt/local /opt/csw /opt)"
+        ]
+    },
+    {
+        "name": "Threads",
+        "type": "find_package",
+        "reachability": "['NOT APPLE']",
+        "code": [
+            "FIND_PACKAGE(Threads)"
+        ]
+    },
+    {
+        "name": [
+            "ogg",
+            "ogg_static"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT GP2XWIZ']",
+        "code": [
+            "find_library(OGG_LIBRARY NAMES ogg ogg_static)"
+        ]
+    },
+    {
+        "name": [
+            "vorbis",
+            "vorbis_static"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT GP2XWIZ']",
+        "code": [
+            "find_library(VORBIS_LIBRARY NAMES vorbis vorbis_static)"
+        ]
+    },
+    {
+        "name": [
+            "vorbisfile",
+            "vorbisfile_static"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT GP2XWIZ']",
+        "code": [
+            "find_library(VORBIS_FILE_LIBRARY NAMES vorbisfile vorbisfile_static)"
+        ]
+    },
+    {
+        "name": [
+            "vorbis_dec"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (NOT GP2XWIZ)', 'NOT GP2XWIZ']",
+        "code": [
+            "find_library(VORBIS_LIBRARY NAMES vorbis_dec)"
+        ]
+    },
+    {
+        "name": [
+            "sqlite3"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(SQLITE3_LIBRARY NAMES sqlite3)"
+        ]
+    },
+    {
+        "name": [
+            "theora"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(THEORA_LIBRARY NAMES theora)"
+        ]
+    },
+    {
+        "name": [
+            "glew",
+            "GLEW",
+            "glew32",
+            "glew32s"
+        ],
+        "type": "find_library",
+        "reachability": "['WIN32']",
+        "code": [
+            "FIND_LIBRARY(GLEW_LIBRARY NAMES glew GLEW glew32 glew32s PATHS $ENV{PROGRAMFILES}/GLEW/lib ${PROJECT_SOURCE_DIR}/src/nvgl/glew/bin ${PROJECT_SOURCE_DIR}/src/nvgl/glew/lib DOC \"The GLEW library\")"
+        ]
+    },
+    {
+        "name": [
+            "GLEW",
+            "glew"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (WIN32)', 'WIN32']",
+        "code": [
+            "FIND_LIBRARY(GLEW_LIBRARY NAMES GLEW glew PATHS /usr/lib64 /usr/lib /usr/local/lib64 /usr/local/lib /sw/lib /opt/local/lib DOC \"The GLEW library\")"
+        ]
+    },
+    {
+        "name": [
+            "m"
+        ],
+        "type": "find_library",
+        "reachability": "['LUA_LIBRARY', 'UNIX AND NOT APPLE']",
+        "code": [
+            "FIND_LIBRARY(LUA_MATH_LIBRARY m)"
+        ]
+    },
+    {
+        "name": [
+            "GLESv1_CM"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(GLES_LIBRARY NAMES GLESv1_CM)"
+        ]
+    }
+]

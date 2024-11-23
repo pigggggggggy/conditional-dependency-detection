@@ -1,0 +1,835 @@
+[
+    {
+        "name": "Python3",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Python3 3.6 REQUIRED)"
+        ]
+    },
+    {
+        "name": "PowerShell",
+        "type": "find_package",
+        "reachability": "['WIN32', 'NOT CMAKE_CROSSCOMPILING']",
+        "code": [
+            "find_package(PowerShell REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "vld"
+        ],
+        "type": "find_library",
+        "reachability": "['MSVC', 'ENABLE_VLD']",
+        "code": [
+            "find_library(VLD_LIBRARY NAMES vld HINTS \"$ENV{PROGRAMFILES}/Visual Leak Detector/lib/${_vld_arch}\" \"$ENV{${_PF86}}/Visual Leak Detector/lib/${_vld_arch}\" \"$ENV{PROGRAMW6432}/Visual Leak Detector/lib/${_vld_arch}\")"
+        ]
+    },
+    {
+        "name": "Git",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Git)"
+        ]
+    },
+    {
+        "name": "GLIB2",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(GLIB2 \"2.54.0\" REQUIRED)"
+        ]
+    },
+    {
+        "name": "GMODULE2",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(GMODULE2)"
+        ]
+    },
+    {
+        "name": "GTHREAD2",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(GTHREAD2 REQUIRED)"
+        ]
+    },
+    {
+        "name": "GCRYPT",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(GCRYPT \"1.8.0\" REQUIRED)"
+        ]
+    },
+    {
+        "name": "CARES",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(CARES \"1.13.0\" REQUIRED)"
+        ]
+    },
+    {
+        "name": "LEX",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(LEX REQUIRED)"
+        ]
+    },
+    {
+        "name": "Perl",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Perl)"
+        ]
+    },
+    {
+        "name": "PCRE2",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(PCRE2 REQUIRED)"
+        ]
+    },
+    {
+        "name": "Gettext",
+        "type": "find_package",
+        "reachability": "['NOT WIN32']",
+        "code": [
+            "find_package(Gettext)"
+        ]
+    },
+    {
+        "name": "M",
+        "type": "find_package",
+        "reachability": "['NOT WIN32']",
+        "code": [
+            "find_package(M REQUIRED)"
+        ]
+    },
+    {
+        "name": "${_package_name}",
+        "type": "find_package",
+        "reachability": "['BUILD_logray', '${_enable_package}'] OR ['${_enable_package}'] OR ['CMAKE_SYSTEM_NAME STREQUAL \"Linux\"', '${_enable_package}'] OR ['NOT (FETCH_lua)', '', '${_enable_package}'] OR ['BUILD_wireshark OR BUILD_logray', 'APPLE', '${_enable_package}'] OR ['NOT MINIZIPNG_FOUND', '${_enable_package}']",
+        "code": [
+            "find_package(${_package_name} ${ARGN})"
+        ]
+    },
+    {
+        "name": "Qt6",
+        "type": "find_package",
+        "reachability": "['BUILD_wireshark OR BUILD_logray', 'USE_qt6']",
+        "code": [
+            "find_package(Qt6 REQUIRED COMPONENTS Core Gui LinguistTools PrintSupport Widgets Concurrent Core5Compat DBus OPTIONAL_COMPONENTS Multimedia)"
+        ]
+    },
+    {
+        "name": "${_qt5_package}",
+        "type": "find_package",
+        "reachability": "['BUILD_wireshark OR BUILD_logray', 'NOT (USE_qt6)', 'USE_qt6']",
+        "code": [
+            "find_package(${_qt5_package} ${QT5_FIND_PACKAGE_OPTIONS})",
+            "find_package(${_qt5_package} REQUIRED ${QT5_FIND_PACKAGE_OPTIONS})"
+        ]
+    },
+    {
+        "name": "SETCAP",
+        "type": "find_package",
+        "reachability": "['CMAKE_SYSTEM_NAME STREQUAL \"Linux\"']",
+        "code": [
+            "find_package(SETCAP)"
+        ]
+    },
+    {
+        "name": "Asciidoctor",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Asciidoctor 1.5)"
+        ]
+    },
+    {
+        "name": "XSLTPROC",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(XSLTPROC)"
+        ]
+    },
+    {
+        "name": "DOXYGEN",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(DOXYGEN)"
+        ]
+    },
+    {
+        "name": "SpeexDSP",
+        "type": "find_package",
+        "reachability": "['BUILD_wireshark OR BUILD_logray OR BUILD_sharkd']",
+        "code": [
+            "find_package(SpeexDSP REQUIRED)"
+        ]
+    },
+    {
+        "name": [
+            "ApplicationServices"
+        ],
+        "type": "find_library",
+        "reachability": "['APPLE']",
+        "code": [
+            "FIND_LIBRARY(APPLE_APPLICATION_SERVICES_LIBRARY ApplicationServices)"
+        ]
+    },
+    {
+        "name": [
+            "AppKit"
+        ],
+        "type": "find_library",
+        "reachability": "['APPLE']",
+        "code": [
+            "FIND_LIBRARY(APPLE_APPKIT_LIBRARY AppKit)"
+        ]
+    },
+    {
+        "name": [
+            "CoreFoundation"
+        ],
+        "type": "find_library",
+        "reachability": "['APPLE']",
+        "code": [
+            "FIND_LIBRARY(APPLE_CORE_FOUNDATION_LIBRARY CoreFoundation)"
+        ]
+    },
+    {
+        "name": [
+            "SystemConfiguration"
+        ],
+        "type": "find_library",
+        "reachability": "['APPLE']",
+        "code": [
+            "FIND_LIBRARY(APPLE_SYSTEM_CONFIGURATION_LIBRARY SystemConfiguration)"
+        ]
+    },
+    {
+        "name": "MSVC_REDIST",
+        "type": "find_package",
+        "reachability": "['WIN32']",
+        "code": [
+            "find_package(MSVC_REDIST)"
+        ]
+    },
+    {
+        "name": "NSIS",
+        "type": "find_package",
+        "reachability": "['WIN32']",
+        "code": [
+            "find_package(NSIS)"
+        ]
+    },
+    {
+        "name": "WiX",
+        "type": "find_package",
+        "reachability": "['WIN32']",
+        "code": [
+            "find_package(WiX)"
+        ]
+    },
+    {
+        "name": "PortableApps",
+        "type": "find_package",
+        "reachability": "['WIN32']",
+        "code": [
+            "find_package(PortableApps)"
+        ]
+    },
+    {
+        "name": "Wireshark",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Wireshark CONFIG REQUIRED)"
+        ]
+    },
+    {
+        "name": "PkgConfig",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(PkgConfig)",
+            "find_package(PkgConfig QUIET)"
+        ]
+    },
+    {
+        "name": "SINSP",
+        "type": "pkg_check_modules",
+        "reachability": "['NOT USE_REPOSITORY']",
+        "code": [
+            "pkg_check_modules(SINSP libsinsp)"
+        ]
+    },
+    {
+        "name": [
+            "sinsp"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT SINSP_FOUND']",
+        "code": [
+            "find_library(_sinsp_link_libs NO_CACHE NAMES sinsp HINTS \"${SINSP_LIBDIR}\" \"${SINSP_HINTS}/lib\" PATHS falcosecurity /usr/lib /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "UNKNOWN_NAME"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(SMI_LIBRARY NAMES ${SMI_NAMES} HINTS \"${SMI_HINTS}/lib\")",
+            "find_library(_abspath_${_library} NAMES ${_library} HINTS ${KERBEROS_LIBDIR} ${KERBEROS_LIBRARY_DIRS})",
+            "find_library(${OUTPUT_LIBRARY}_DEBUG NAMES ${WS_LIB_NAMES} HINTS \"${WS_LIB_WIN32_HINTS}/debug/lib\" PATHS ${WS_LIB_PATHS})",
+            "FIND_LIBRARY(CAP_LIBRARY NAMES ${CAP_NAMES} HINTS ${CAP_LIBDIR})",
+            "FIND_LIBRARY(ZLIB_LIBRARY NAMES ${ZLIB_NAMES} HINTS \"${ZLIB_LIBDIR}\" ${ZLIB_HINTS}/lib ${ZLIB_HINTS} PATHS \"[HKEY_LOCAL_MACHINE\\\\SOFTWARE\\\\GnuWin32\\\\Zlib;InstallPath]/lib\" ${_zlib_sys_env_option})",
+            "find_library(${OUTPUT_LIBRARY}_RELEASE NAMES ${WS_LIB_NAMES} HINTS \"${WS_LIB_WIN32_HINTS}/lib\" PATHS ${WS_LIB_PATHS})",
+            "find_library(KERBEROS_LIBRARY NAMES ${KERBEROS_NAMES} HINTS \"${KERBEROS_HINTS}/lib\")",
+            "find_library(${OUTPUT_LIBRARY} NAMES ${WS_LIB_NAMES} HINTS ${WS_LIB_HINTS} PATHS ${WS_LIB_PATHS})",
+            "find_library(_lib NO_CACHE NAMES ${_scap_lib} HINTS \"${SINSP_LIBDIR}\" \"${SINSP_HINTS}/lib\" PATHS falcosecurity /usr/lib /usr/local/lib)",
+            "find_library(${_libvar} ${_lib} HINTS ${PC_PCAP_STATIC_LIBRARY_DIRS} ${PCAP_CONFIG_STATIC_LIBRARY_DIRS})",
+            "FIND_LIBRARY(ZLIBNG_LIBRARY NAMES ${ZLIBNG_NAMES} HINTS ${ZLIBNG_LIBDIR} ${ZLIBNG_HINTS}/lib PATHS /usr/lib /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "jsoncpp"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT SINSP_FOUND']",
+        "code": [
+            "find_library(_jsoncpp_lib NO_CACHE NAMES jsoncpp HINTS \"${SINSP_LIBDIR}\" \"${SINSP_HINTS}/lib\" \"${SINSP_HINTS}/lib/falcosecurity\" PATHS /usr/lib /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "re2"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT SINSP_FOUND']",
+        "code": [
+            "find_library(_re2_lib NO_CACHE NAMES re2 HINTS \"${SINSP_LIBDIR}\" \"${SINSP_HINTS}/lib\" \"${SINSP_HINTS}/lib/falcosecurity\" PATHS /usr/lib /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "tbb",
+            "tbb12"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT SINSP_FOUND']",
+        "code": [
+            "find_library(_tbb_lib NO_CACHE NAMES tbb tbb12 HINTS \"${SINSP_LIBDIR}\" \"${SINSP_HINTS}/lib\" \"${SINSP_HINTS}/lib/falcosecurity\" PATHS /usr/lib /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "zlibstatic"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT SINSP_FOUND']",
+        "code": [
+            "find_library(_zlib_lib NO_CACHE NAMES zlibstatic HINTS \"${SINSP_LIBDIR}\" \"${SINSP_HINTS}/lib\" \"${SINSP_HINTS}/lib/falcosecurity\" PATHS /usr/lib /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "gnutls",
+            "libgnutls-28",
+            "libgnutls-30"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(GNUTLS_LIBRARY NAMES gnutls libgnutls-28 libgnutls-30 HINTS \"${GNUTLS_LIBDIR}\" \"${GNUTLS_HINTS}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "libminizip-ng",
+            "minizip-ng"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(MINIZIPNG_LIBRARY NAMES libminizip-ng minizip-ng HINTS ${MINIZIPNG_LIBRARY_DIRS} ${MINIZIPNG_HINTS}/lib PATH /opt /opt/homebrew/lib)"
+        ]
+    },
+    {
+        "name": [
+            "bz2"
+        ],
+        "type": "find_library",
+        "reachability": "['MINIZIPNG_FOUND']",
+        "code": [
+            "find_library(BZ2_LIBRARY NAMES bz2 HINTS ${MINIZIPNG_LIBRARY_DIRS} \"${MINIZIPNG_HINTS}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "lzma"
+        ],
+        "type": "find_library",
+        "reachability": "['MINIZIPNG_FOUND']",
+        "code": [
+            "find_library(LZMA_LIBRARY NAMES lzma HINTS ${MINIZIPNG_LIBRARY_DIRS} \"${MINIZIPNG_HINTS}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "zstd"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(ZSTD_LIBRARY NAMES zstd HINTS \"${ZSTD_LIBDIR}\" \"${ZSTD_HINTS}/lib\" PATHS /usr/lib /usr/local/lib)",
+            "find_library(ZSTD_LIBRARY NAMES zstd HINTS ${MINIZIPNG_LIBRARY_DIRS} \"${MINIZIPNG_HINTS}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "Bcrypt"
+        ],
+        "type": "find_library",
+        "reachability": "['MINIZIPNG_FOUND', 'WIN32']",
+        "code": [
+            "find_library(Bcrypt_LIBRARY NAMES Bcrypt)"
+        ]
+    },
+    {
+        "name": [
+            "opencore-amrnb",
+            "libopencore-amrnb-0"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(AMRNB_LIBRARY NAMES opencore-amrnb libopencore-amrnb-0 HINTS \"${PC_AMRNB_LIBDIRS}\" \"${AMRNB_HINTS}/lib\" PATHS /usr/local/lib /usr/lib)"
+        ]
+    },
+    {
+        "name": [
+            "bcg729"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(BCG729_LIBRARY NAMES bcg729 HINTS \"${BCG729_LIBDIR}\" \"${BCG729_HINTS}/lib\" PATHS /usr/local/lib /usr/lib)"
+        ]
+    },
+    {
+        "name": [
+            "ssh",
+            "libssh"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '']",
+        "code": [
+            "find_library(LIBSSH_LIBRARY NAMES ssh libssh HINTS \"${LIBSSH_HINTS}/lib\" PATHS /usr/lib /usr/local/lib /opt/local/lib /sw/lib ${CMAKE_LIBRARY_PATH} ${CMAKE_INSTALL_PREFIX}/lib)"
+        ]
+    },
+    {
+        "name": "PC_LIBXML",
+        "type": "pkg_check_modules",
+        "reachability": "['NOT USE_REPOSITORY']",
+        "code": [
+            "PKG_CHECK_MODULES(PC_LIBXML QUIET libxml-2.0)"
+        ]
+    },
+    {
+        "name": [
+            "xml2",
+            "libxml2",
+            "libxml2-2"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(LIBXML2_LIBRARY NAMES xml2 libxml2 libxml2-2 HINTS ${PC_LIBXML_LIBDIR} ${PC_LIBXML_LIBRARY_DIRS} ${LIBXML2_HINTS}/lib)"
+        ]
+    },
+    {
+        "name": [
+            "minizip"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(MINIZIP_LIBRARY NAMES minizip HINTS ${MINIZIP_LIBRARY_DIRS} \"${MINIZIP_HINTS}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "ilbc",
+            "libilbc-2"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(ILBC_LIBRARY NAMES ilbc libilbc-2 HINTS \"${PC_ILBC_LIBRARY_DIRS}\" \"${ILBC_HINTS}/lib\" PATHS /usr/local/lib /usr/lib)"
+        ]
+    },
+    {
+        "name": [
+            "snappy"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(SNAPPY_LIBRARY NAMES snappy HINTS \"${SNAPPY_LIBDIR}\" \"${SNAPPY_HINTS}/lib\" PATHS /usr/lib /usr/local/lib)"
+        ]
+    },
+    {
+        "name": [
+            "sbc",
+            "libsbc-1"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(SBC_LIBRARY NAMES sbc libsbc-1 HINTS \"${SBC_HINTS}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "Sparkle"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(SPARKLE_LIBRARY NAMES Sparkle HINTS ${USR_LOCAL_HINT} ${HOMEBREW_HINT})"
+        ]
+    },
+    {
+        "name": [
+            "nghttp3"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(NGHTTP3_LIBRARY NAMES nghttp3 HINTS \"${NGHTTP3_LIBDIR}\" \"${NGHTTP3_HINTS}/lib\" PATHS /usr/local/lib /usr/lib)"
+        ]
+    },
+    {
+        "name": [
+            "pcre2-8"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(PCRE2_LIBRARY NAMES pcre2-8 HINTS ${PC_PCRE2_LIBRARY_DIRS} ${PCRE2_HINTS}/lib)"
+        ]
+    },
+    {
+        "name": [
+            "pcre2-8d"
+        ],
+        "type": "find_library",
+        "reachability": "['USE_REPOSITORY']",
+        "code": [
+            "find_library(PCRE2_DEBUG_LIBRARY NAMES pcre2-8d HINTS ${PCRE2_HINTS}/debug/lib)"
+        ]
+    },
+    {
+        "name": [
+            "nghttp2"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(NGHTTP2_LIBRARY NAMES nghttp2 HINTS \"${NGHTTP2_LIBDIR}\" \"${NGHTTP2_HINTS}/lib\" PATHS /usr/local/lib /usr/lib)"
+        ]
+    },
+    {
+        "name": [
+            "opus"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(OPUS_LIBRARY NAMES opus HINTS \"${OPUS_LIBRARY_DIRS}\" \"${OPUS_HINTS}/lib\" PATHS /usr/local/lib /usr/lib)"
+        ]
+    },
+    {
+        "name": "TIFF",
+        "type": "find_package",
+        "reachability": "['NOT USE_REPOSITORY']",
+        "code": [
+            "find_package(TIFF QUIET)"
+        ]
+    },
+    {
+        "name": [
+            "spandsp",
+            "libspandsp-2"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(SPANDSP_LIBRARY NAMES spandsp libspandsp-2 HINTS \"${SPANDSP_LIBDIR}\" \"${SPANDSP_HINTS}/lib\" PATHS /usr/local/lib /usr/lib)"
+        ]
+    },
+    {
+        "name": "PC_GMODULE2",
+        "type": "pkg_check_modules",
+        "reachability": "['NOT USE_REPOSITORY']",
+        "code": [
+            "pkg_check_modules(PC_GMODULE2 gmodule-2.0)"
+        ]
+    },
+    {
+        "name": [
+            "brotlidec"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(BROTLIDEC_LIBRARY NAMES brotlidec HINTS \"${BROTLI_HINTS}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "pcap",
+            "wpcap"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (WIN32 AND NOT CMAKE_CROSSCOMPILING)', '']",
+        "code": [
+            "find_library(PCAP_LIBRARY NAMES pcap wpcap HINTS ${PC_PCAP_LIBRARY_DIRS} ${PCAP_CONFIG_LIBRARY_DIRS})"
+        ]
+    },
+    {
+        "name": "PC_GTHREAD2",
+        "type": "pkg_check_modules",
+        "reachability": "['NOT USE_REPOSITORY']",
+        "code": [
+            "pkg_check_modules(PC_GTHREAD2 gthread-2.0)"
+        ]
+    },
+    {
+        "name": [
+            "systemd"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(SYSTEMD_LIBRARY NAMES systemd HINTS ${PC_SYSTEMD_LIBRARY_DIRS})"
+        ]
+    },
+    {
+        "name": [
+            "pcre"
+        ],
+        "type": "find_library",
+        "reachability": "['GLIB2_FOUND', 'UNIX AND CMAKE_FIND_LIBRARY_SUFFIXES STREQUAL \".a\"']",
+        "code": [
+            "find_library(PCRE_LIBRARY pcre)"
+        ]
+    },
+    {
+        "name": "PC_LIBMAXMINDDB",
+        "type": "pkg_check_modules",
+        "reachability": "['NOT USE_REPOSITORY']",
+        "code": [
+            "pkg_check_modules(PC_LIBMAXMINDDB QUIET libmaxminddb)"
+        ]
+    },
+    {
+        "name": [
+            "maxminddb",
+            "libmaxminddb",
+            "libmaxminddb-0"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(MAXMINDDB_LIBRARY NAMES maxminddb libmaxminddb libmaxminddb-0 HINTS ${PC_LIBMAXMINDDB_LIBDIR} ${PC_LIBMAXMINDDB_LIBRARY_DIRS} \"${MAXMINDDB_HINTS}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "speexdsp"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(SPEEXDSP_LIBRARY NAMES speexdsp HINTS ${PC_SPEEXDSP_LIBRARY_DIRS} ${SPEEXDSP_HINTS}/lib)"
+        ]
+    },
+    {
+        "name": [
+            "WinSparkle"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "FIND_LIBRARY(WINSPARKLE_LIBRARY NAMES WinSparkle HINTS \"${WINSPARKLE_HINTS}/${_release_subdir}\")"
+        ]
+    },
+    {
+        "name": [
+            "lua"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(LUA_LIBRARY NAMES ${_lua_library_names} lua NAMES_PER_DIR HINTS ${LUA_HINTS} ENV LUA_DIR PATH_SUFFIXES lib ${_lua_library_names})"
+        ]
+    },
+    {
+        "name": [
+            "m"
+        ],
+        "type": "find_library",
+        "reachability": "['LUA_LIBRARY', 'UNIX AND NOT APPLE AND NOT BEOS']",
+        "code": [
+            "find_library(LUA_MATH_LIBRARY m)"
+        ]
+    },
+    {
+        "name": [
+            "gcrypt",
+            "libgcrypt",
+            "libgcrypt-20"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(GCRYPT_LIBRARY NAMES gcrypt libgcrypt libgcrypt-20 PATH_SUFFIXES lib HINTS \"${GCRYPT_LIBDIR}\" \"${GCRYPT_HINTS}\")"
+        ]
+    },
+    {
+        "name": [
+            "gpg-error",
+            "libgpg-error",
+            "libgpg-error-0",
+            "libgpg-error6-0"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(GCRYPT_ERROR_LIBRARY NAMES gpg-error libgpg-error libgpg-error-0 libgpg-error6-0 PATH_SUFFIXES lib HINTS \"${GCRYPT_LIBDIR}\" \"${GCRYPT_HINTS}\")"
+        ]
+    },
+    {
+        "name": "NL3",
+        "type": "pkg_check_modules",
+        "reachability": "['NOT (NL_LIBRARIES AND NL_INCLUDE_DIRS)', '']",
+        "code": [
+            "pkg_check_modules(NL3 libnl-3.0 libnl-genl-3.0 libnl-route-3.0)"
+        ]
+    },
+    {
+        "name": [
+            "nl-3",
+            "nl"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (NL_LIBRARIES AND NL_INCLUDE_DIRS)', '', 'NL3_INCLUDE_DIR']",
+        "code": [
+            "find_library(NL3_LIBRARY NAMES nl-3 nl PATH_SUFFIXES lib64 lib HINTS \"${NL3_libnl-3.0_LIBDIR}\" \"${NL2_LIBDIR}\" PATHS $ (SEARCHPATHS))"
+        ]
+    },
+    {
+        "name": [
+            "nl-genl-3",
+            "nl-genl"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (NL_LIBRARIES AND NL_INCLUDE_DIRS)', '', 'NL3_INCLUDE_DIR']",
+        "code": [
+            "find_library(NLGENL_LIBRARY NAMES nl-genl-3 nl-genl PATH_SUFFIXES lib64 lib HINTS \"${NL3_libnl-genl-3.0_LIBDIR}\" \"${NL2_LIBDIR}\" PATHS $ (SEARCHPATHS))"
+        ]
+    },
+    {
+        "name": [
+            "nl-route-3",
+            "nl-route"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (NL_LIBRARIES AND NL_INCLUDE_DIRS)', '', 'NL3_INCLUDE_DIR']",
+        "code": [
+            "find_library(NLROUTE_LIBRARY NAMES nl-route-3 nl-route PATH_SUFFIXES lib64 lib HINTS \"${NL3_libnl-route-3.0_LIBDIR}\" \"${NL2_LIBDIR}\" PATHS $ (SEARCHPATHS))"
+        ]
+    },
+    {
+        "name": [
+            "nl"
+        ],
+        "type": "find_library",
+        "reachability": "['NOT (NL_LIBRARIES AND NL_INCLUDE_DIRS)', '', 'NOT (NL_LIBRARY AND NL_INCLUDE_DIR']",
+        "code": [
+            "find_library(NL1_LIBRARY NAMES nl PATH_SUFFIXES lib64 lib HINTS \"${NL1_LIBDIR}\" PATHS $ (SEARCHPATHS))"
+        ]
+    },
+    {
+        "name": [
+            "lz4",
+            "liblz4"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(LZ4_LIBRARY NAMES lz4 liblz4 HINTS \"${LZ4_LIBDIR}\" \"${LZ4_HINTS}/lib\" PATHS /usr/local/lib /usr/lib)"
+        ]
+    },
+    {
+        "name": [
+            "airpcap"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(AIRPCAP_LIBRARY NAMES airpcap HINTS \"${AIRPCAP_HINTS}/lib\")"
+        ]
+    },
+    {
+        "name": [
+            "cares",
+            "libcares-2"
+        ],
+        "type": "find_library",
+        "reachability": "",
+        "code": [
+            "find_library(CARES_LIBRARY NAMES cares libcares-2 PATH_SUFFIXES lib64 lib HINTS \"${CARES_LIBDIR}\" \"${CARES_HINTS}\")"
+        ]
+    },
+    {
+        "name": "Qt${qtver}Core",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Qt${qtver}Core)"
+        ]
+    },
+    {
+        "name": "Qt${qtver}PrintSupport",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Qt${qtver}PrintSupport)"
+        ]
+    },
+    {
+        "name": "Qt${qtver}Widgets",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(Qt${qtver}Widgets)"
+        ]
+    }
+]

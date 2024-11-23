@@ -1,0 +1,82 @@
+[
+    {
+        "name": "SQLite3",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(SQLite3 REQUIRED)"
+        ]
+    },
+    {
+        "name": "BZip2",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(BZip2 REQUIRED)"
+        ]
+    },
+    {
+        "name": "LibArchive",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(LibArchive REQUIRED)"
+        ]
+    },
+    {
+        "name": "ZLIB",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(ZLIB REQUIRED)"
+        ]
+    },
+    {
+        "name": "pcre",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(pcre REQUIRED)"
+        ]
+    },
+    {
+        "name": "readline",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(readline REQUIRED)"
+        ]
+    },
+    {
+        "name": "ncurses",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(ncurses REQUIRED)"
+        ]
+    },
+    {
+        "name": "CURL",
+        "type": "find_package",
+        "reachability": "",
+        "code": [
+            "find_package(CURL REQUIRED)"
+        ]
+    },
+    {
+        "name": "Python3",
+        "type": "find_package",
+        "reachability": "['BUILD_MCSS_DOCS']",
+        "code": [
+            "find_package(Python3 3.6 REQUIRED)"
+        ]
+    },
+    {
+        "name": "util",
+        "type": "check_library_exists",
+        "reachability": "",
+        "code": [
+            "check_library_exists(util openpty \"\" HAVE_LIBUTIL)"
+        ]
+    }
+]

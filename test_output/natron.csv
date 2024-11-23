@@ -1,0 +1,15 @@
+num,name,reachability,type,non_empty_count,non_empty_percentage
+,,,,6,46.15%
+1,Boost,,find_package,,
+2,Python3,,find_package,,
+3,Qt5,,find_package,,
+4,Shiboken2,,find_package,,
+5,PySide2,,find_package,,
+6,glog,['NATRON_SYSTEM_LIBS'],find_package,,
+7,Ceres,['NATRON_SYSTEM_LIBS'],find_package,,
+8,ECM,['UNIX AND NOT APPLE'],find_package,,
+9,X11,['UNIX AND NOT APPLE'],find_package,,
+10,Wayland,['UNIX AND NOT APPLE'],find_package,,
+11,EXPAT,,find_package,,
+12,Cairo,,pkg_check_modules,,
+13,CoreFoundation,['APPLE'],find_library,,

@@ -1,0 +1,15 @@
+num,name,reachability,type,non_empty_count,non_empty_percentage
+,,,,13,100.00%
+1,"omp, libomp","['USE_OPENMP', 'APPLE']",find_library,,
+2,Protobuf,"['NOT (BUILD_PROTOBUF)', '', 'NOT (USE_CAFFE OR USE_TORCH)', ''] OR ['NOT (BUILD_PROTOBUF)', '', 'USE_CAFFE OR USE_TORCH']",find_package,,
+3,absl,"['NOT (BUILD_PROTOBUF)', '', '${Protobuf_VERSION} VERSION_GREATER_EQUAL 4.22.0', 'NOT TARGET absl::strings']",find_package,,
+4,PkgConfig,"['NOT (USE_TF)', 'NOT (USE_CAFFE2)', '']",find_package,,
+5,spdlog,"['NOT (BUILD_SPDLOG)', '']",find_package,,
+6,Boost,"['NOT (USE_BOOST_BACKTRACE)', ''] OR ['USE_BOOST_BACKTRACE']",find_package,,
+7,CUDA,"['NOT (USE_CPU_ONLY)', '']",find_package,,
+8,CUDNN,['USE_CUDNN'],find_package,,
+9,OpenCV,"['NOT (USE_OPENCV_VERSION STREQUAL """")', ''] OR ['USE_OPENCV_VERSION STREQUAL """"'] OR ['USE_OPENCV_VERSION STREQUAL """"', 'NOT OpenCV_FOUND']",find_package,,
+10,"hdf5_cpp, hdf5_serial_cpp",['USE_HDF5'],find_library,,
+11,"libcudnn.so, #, libcudnn_static.a","['NOT (USE_CPU_ONLY)', '', 'USE_CUDNN']",find_library,,
+12,GTest,['BUILD_TESTS'],find_package,,
+13,PythonInterp,['BUILD_TESTS'],find_package,,
