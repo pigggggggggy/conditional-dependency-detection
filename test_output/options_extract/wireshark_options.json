@@ -1,0 +1,932 @@
+{
+    "SINSP": [
+        {
+            "option_name": "USE_REPOSITORY",
+            "option_code": "set(USE_REPOSITORY ${_repository} CACHE INTERNAL \"Use Wireshark 3rd Party Repository\")",
+            "reachability": "['WIN32']",
+            "indirect_options": {}
+        }
+    ],
+    "PC_LIBXML": [
+        {
+            "option_name": "USE_REPOSITORY",
+            "option_code": "set(USE_REPOSITORY ${_repository} CACHE INTERNAL \"Use Wireshark 3rd Party Repository\")",
+            "reachability": "['WIN32']",
+            "indirect_options": {}
+        }
+    ],
+    "pcre2-8d": [
+        {
+            "option_name": "USE_REPOSITORY",
+            "option_code": "set(USE_REPOSITORY ${_repository} CACHE INTERNAL \"Use Wireshark 3rd Party Repository\")",
+            "reachability": "['WIN32']",
+            "indirect_options": {}
+        }
+    ],
+    "TIFF": [
+        {
+            "option_name": "USE_REPOSITORY",
+            "option_code": "set(USE_REPOSITORY ${_repository} CACHE INTERNAL \"Use Wireshark 3rd Party Repository\")",
+            "reachability": "['WIN32']",
+            "indirect_options": {}
+        }
+    ],
+    "PC_GMODULE2": [
+        {
+            "option_name": "USE_REPOSITORY",
+            "option_code": "set(USE_REPOSITORY ${_repository} CACHE INTERNAL \"Use Wireshark 3rd Party Repository\")",
+            "reachability": "['WIN32']",
+            "indirect_options": {}
+        }
+    ],
+    "PC_GTHREAD2": [
+        {
+            "option_name": "USE_REPOSITORY",
+            "option_code": "set(USE_REPOSITORY ${_repository} CACHE INTERNAL \"Use Wireshark 3rd Party Repository\")",
+            "reachability": "['WIN32']",
+            "indirect_options": {}
+        }
+    ],
+    "PC_LIBMAXMINDDB": [
+        {
+            "option_name": "USE_REPOSITORY",
+            "option_code": "set(USE_REPOSITORY ${_repository} CACHE INTERNAL \"Use Wireshark 3rd Party Repository\")",
+            "reachability": "['WIN32']",
+            "indirect_options": {}
+        }
+    ],
+    "PCRE_LIBRARY": [
+        {
+            "option_name": "CMAKE_FIND_LIBRARY_SUFFIXES",
+            "option_code": "set(CMAKE_FIND_LIBRARY_SUFFIXES \".a\")",
+            "reachability": "['USE_STATIC']",
+            "indirect_options": {
+                "USE_STATIC": {
+                    "new_option_name": "USE_STATIC",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_STATIC ON)",
+                            "new_reachability": "['OSS_FUZZ']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "OSS_FUZZ": {
+                                "new_option_name": "OSS_FUZZ",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(OSS_FUZZ OFF CACHE BOOL \"Whether building for oss-fuzz\")",
+                                        "new_reachability": "[]"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {}
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "GLIB2_FOUND",
+            "option_code": "find_package(GLIB2 \"2.54.0\" REQUIRED)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "_sinsp_link_libs": [
+        {
+            "option_name": "SINSP_FOUND",
+            "option_code": "set(SINSP_FOUND 1)",
+            "reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']",
+            "indirect_options": {
+                "SINSP_FOUND": {
+                    "new_option_name": "SINSP_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(SINSP_FOUND 1)",
+                            "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "SINSP_FOUND": {
+                                "new_option_name": "SINSP_FOUND",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(SINSP_FOUND 1)",
+                                        "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {
+                                        "SINSP_FOUND": {
+                                            "new_option_name": "SINSP_FOUND",
+                                            "new_option_code_reachabilities": [
+                                                {
+                                                    "new_option_code": "set(SINSP_FOUND 1)",
+                                                    "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                }
+                                            ],
+                                            "new_indirect_options": [
+                                                {
+                                                    "SINSP_FOUND": {
+                                                        "new_option_name": "SINSP_FOUND",
+                                                        "new_option_code_reachabilities": [
+                                                            {
+                                                                "new_option_code": "set(SINSP_FOUND 1)",
+                                                                "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                            }
+                                                        ],
+                                                        "new_indirect_options": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "_lib": [
+        {
+            "option_name": "SINSP_FOUND",
+            "option_code": "set(SINSP_FOUND 1)",
+            "reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']",
+            "indirect_options": {
+                "SINSP_FOUND": {
+                    "new_option_name": "SINSP_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(SINSP_FOUND 1)",
+                            "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "SINSP_FOUND": {
+                                "new_option_name": "SINSP_FOUND",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(SINSP_FOUND 1)",
+                                        "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {
+                                        "SINSP_FOUND": {
+                                            "new_option_name": "SINSP_FOUND",
+                                            "new_option_code_reachabilities": [
+                                                {
+                                                    "new_option_code": "set(SINSP_FOUND 1)",
+                                                    "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                }
+                                            ],
+                                            "new_indirect_options": [
+                                                {
+                                                    "SINSP_FOUND": {
+                                                        "new_option_name": "SINSP_FOUND",
+                                                        "new_option_code_reachabilities": [
+                                                            {
+                                                                "new_option_code": "set(SINSP_FOUND 1)",
+                                                                "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                            }
+                                                        ],
+                                                        "new_indirect_options": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "_jsoncpp_lib": [
+        {
+            "option_name": "SINSP_FOUND",
+            "option_code": "set(SINSP_FOUND 1)",
+            "reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']",
+            "indirect_options": {
+                "SINSP_FOUND": {
+                    "new_option_name": "SINSP_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(SINSP_FOUND 1)",
+                            "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "SINSP_FOUND": {
+                                "new_option_name": "SINSP_FOUND",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(SINSP_FOUND 1)",
+                                        "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {
+                                        "SINSP_FOUND": {
+                                            "new_option_name": "SINSP_FOUND",
+                                            "new_option_code_reachabilities": [
+                                                {
+                                                    "new_option_code": "set(SINSP_FOUND 1)",
+                                                    "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                }
+                                            ],
+                                            "new_indirect_options": [
+                                                {
+                                                    "SINSP_FOUND": {
+                                                        "new_option_name": "SINSP_FOUND",
+                                                        "new_option_code_reachabilities": [
+                                                            {
+                                                                "new_option_code": "set(SINSP_FOUND 1)",
+                                                                "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                            }
+                                                        ],
+                                                        "new_indirect_options": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "_re2_lib": [
+        {
+            "option_name": "SINSP_FOUND",
+            "option_code": "set(SINSP_FOUND 1)",
+            "reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']",
+            "indirect_options": {
+                "SINSP_FOUND": {
+                    "new_option_name": "SINSP_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(SINSP_FOUND 1)",
+                            "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "SINSP_FOUND": {
+                                "new_option_name": "SINSP_FOUND",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(SINSP_FOUND 1)",
+                                        "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {
+                                        "SINSP_FOUND": {
+                                            "new_option_name": "SINSP_FOUND",
+                                            "new_option_code_reachabilities": [
+                                                {
+                                                    "new_option_code": "set(SINSP_FOUND 1)",
+                                                    "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                }
+                                            ],
+                                            "new_indirect_options": [
+                                                {
+                                                    "SINSP_FOUND": {
+                                                        "new_option_name": "SINSP_FOUND",
+                                                        "new_option_code_reachabilities": [
+                                                            {
+                                                                "new_option_code": "set(SINSP_FOUND 1)",
+                                                                "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                            }
+                                                        ],
+                                                        "new_indirect_options": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "_tbb_lib": [
+        {
+            "option_name": "SINSP_FOUND",
+            "option_code": "set(SINSP_FOUND 1)",
+            "reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']",
+            "indirect_options": {
+                "SINSP_FOUND": {
+                    "new_option_name": "SINSP_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(SINSP_FOUND 1)",
+                            "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "SINSP_FOUND": {
+                                "new_option_name": "SINSP_FOUND",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(SINSP_FOUND 1)",
+                                        "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {
+                                        "SINSP_FOUND": {
+                                            "new_option_name": "SINSP_FOUND",
+                                            "new_option_code_reachabilities": [
+                                                {
+                                                    "new_option_code": "set(SINSP_FOUND 1)",
+                                                    "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                }
+                                            ],
+                                            "new_indirect_options": [
+                                                {
+                                                    "SINSP_FOUND": {
+                                                        "new_option_name": "SINSP_FOUND",
+                                                        "new_option_code_reachabilities": [
+                                                            {
+                                                                "new_option_code": "set(SINSP_FOUND 1)",
+                                                                "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                            }
+                                                        ],
+                                                        "new_indirect_options": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "_zlib_lib": [
+        {
+            "option_name": "SINSP_FOUND",
+            "option_code": "set(SINSP_FOUND 1)",
+            "reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']",
+            "indirect_options": {
+                "SINSP_FOUND": {
+                    "new_option_name": "SINSP_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(SINSP_FOUND 1)",
+                            "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "SINSP_FOUND": {
+                                "new_option_name": "SINSP_FOUND",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(SINSP_FOUND 1)",
+                                        "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {
+                                        "SINSP_FOUND": {
+                                            "new_option_name": "SINSP_FOUND",
+                                            "new_option_code_reachabilities": [
+                                                {
+                                                    "new_option_code": "set(SINSP_FOUND 1)",
+                                                    "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                }
+                                            ],
+                                            "new_indirect_options": [
+                                                {
+                                                    "SINSP_FOUND": {
+                                                        "new_option_name": "SINSP_FOUND",
+                                                        "new_option_code_reachabilities": [
+                                                            {
+                                                                "new_option_code": "set(SINSP_FOUND 1)",
+                                                                "new_reachability": "['NOT SINSP_FOUND', '_sinsp_include_dirs AND _sinsp_link_libs']"
+                                                            }
+                                                        ],
+                                                        "new_indirect_options": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "ssh": [
+        {
+            "option_name": "LIBSSH_INCLUDE_DIRS",
+            "option_code": "set(LIBSSH_INCLUDE_DIRS ${LIBSSH_INCLUDE_DIR})",
+            "reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']",
+            "indirect_options": {
+                "LIBSSH_LIBRARIES": {
+                    "new_option_name": "LIBSSH_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(LIBSSH_LIBRARIES ${LIBSSH_LIBRARY})",
+                            "new_reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "LIBSSH_LIBRARIES": {
+                                "new_option_name": "LIBSSH_LIBRARIES",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(LIBSSH_LIBRARIES ${LIBSSH_LIBRARY})",
+                                        "new_reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {
+                                        "LIBSSH_LIBRARIES": {
+                                            "new_option_name": "LIBSSH_LIBRARIES",
+                                            "new_option_code_reachabilities": [
+                                                {
+                                                    "new_option_code": "set(LIBSSH_LIBRARIES ${LIBSSH_LIBRARY})",
+                                                    "new_reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']"
+                                                }
+                                            ],
+                                            "new_indirect_options": [
+                                                {
+                                                    "LIBSSH_LIBRARIES": {
+                                                        "new_option_name": "LIBSSH_LIBRARIES",
+                                                        "new_option_code_reachabilities": [
+                                                            {
+                                                                "new_option_code": "set(LIBSSH_LIBRARIES ${LIBSSH_LIBRARY})",
+                                                                "new_reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']"
+                                                            }
+                                                        ],
+                                                        "new_indirect_options": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "LIBSSH_LIBRARIES",
+            "option_code": "set(LIBSSH_LIBRARIES ${LIBSSH_LIBRARY})",
+            "reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']",
+            "indirect_options": {
+                "LIBSSH_LIBRARIES": {
+                    "new_option_name": "LIBSSH_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(LIBSSH_LIBRARIES ${LIBSSH_LIBRARY})",
+                            "new_reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "LIBSSH_LIBRARIES": {
+                                "new_option_name": "LIBSSH_LIBRARIES",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(LIBSSH_LIBRARIES ${LIBSSH_LIBRARY})",
+                                        "new_reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {
+                                        "LIBSSH_LIBRARIES": {
+                                            "new_option_name": "LIBSSH_LIBRARIES",
+                                            "new_option_code_reachabilities": [
+                                                {
+                                                    "new_option_code": "set(LIBSSH_LIBRARIES ${LIBSSH_LIBRARY})",
+                                                    "new_reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']"
+                                                }
+                                            ],
+                                            "new_indirect_options": [
+                                                {
+                                                    "LIBSSH_LIBRARIES": {
+                                                        "new_option_name": "LIBSSH_LIBRARIES",
+                                                        "new_option_code_reachabilities": [
+                                                            {
+                                                                "new_option_code": "set(LIBSSH_LIBRARIES ${LIBSSH_LIBRARY})",
+                                                                "new_reachability": "['NOT (LIBSSH_LIBRARIES AND LIBSSH_INCLUDE_DIRS)', '', 'LIBSSH_INCLUDE_DIR AND LIBSSH_LIBRARY']"
+                                                            }
+                                                        ],
+                                                        "new_indirect_options": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "LIBSSH_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "LIBSSH_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "LUA_MATH_LIBRARY": [
+        {
+            "option_name": "LUA_LIBRARY",
+            "option_code": "find_library(LUA_LIBRARY NAMES ${_lua_library_names} lua NAMES_PER_DIR HINTS ${LUA_HINTS} ENV LUA_DIR PATH_SUFFIXES lib ${_lua_library_names})",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "LUA_LIBRARY",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "ZLIB_LIBRARY": [
+        {
+            "option_name": "ZLIB_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "ZLIB_LIBRARY",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "ZLIB_LIBRARY",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "ZLIB_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "nl-3": [
+        {
+            "option_name": "NL3_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES ${NLGENL_LIBRARY} ${NLROUTE_LIBRARY} ${NL_LIBRARY})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS ${NL_INCLUDE_DIR})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "nl-genl-3": [
+        {
+            "option_name": "NL3_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES ${NLGENL_LIBRARY} ${NLROUTE_LIBRARY} ${NL_LIBRARY})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS ${NL_INCLUDE_DIR})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "nl-route-3": [
+        {
+            "option_name": "NL3_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES ${NLGENL_LIBRARY} ${NLROUTE_LIBRARY} ${NL_LIBRARY})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS ${NL_INCLUDE_DIR})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "nl": [
+        {
+            "option_name": "NL_LIBRARY",
+            "option_code": "set(NL_LIBRARY ${NL3_LIBRARY})",
+            "reachability": "['NOT (NL_LIBRARIES AND NL_INCLUDE_DIRS)', '', 'NL3_INCLUDE_DIR', 'NL3_LIBRARY AND NLGENL_LIBRARY AND NLROUTE_LIBRARY']",
+            "indirect_options": {
+                "NL_LIBRARIES": {
+                    "new_option_name": "NL_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(NL_LIBRARIES ${NLGENL_LIBRARY} ${NLROUTE_LIBRARY} ${NL_LIBRARY})",
+                            "new_reachability": "['NL_FOUND']"
+                        },
+                        {
+                            "new_option_code": "set(NL_LIBRARIES)",
+                            "new_reachability": "['NOT (NL_FOUND)', '']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "NL_INCLUDE_DIR",
+            "option_code": "set(NL_INCLUDE_DIR ${NL3_INCLUDE_DIR})",
+            "reachability": "['NOT (NL_LIBRARIES AND NL_INCLUDE_DIRS)', '', 'NL3_INCLUDE_DIR']",
+            "indirect_options": {
+                "NL_LIBRARIES": {
+                    "new_option_name": "NL_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(NL_LIBRARIES ${NLGENL_LIBRARY} ${NLROUTE_LIBRARY} ${NL_LIBRARY})",
+                            "new_reachability": "['NL_FOUND']"
+                        },
+                        {
+                            "new_option_code": "set(NL_LIBRARIES)",
+                            "new_reachability": "['NOT (NL_FOUND)', '']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "NL_LIBRARY",
+            "option_code": "set(NL_LIBRARY ${NL1_LIBRARY})",
+            "reachability": "['NOT (NL_LIBRARIES AND NL_INCLUDE_DIRS)', '', 'NOT (NL_LIBRARY AND NL_INCLUDE_DIR']",
+            "indirect_options": {
+                "NL_LIBRARIES": {
+                    "new_option_name": "NL_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(NL_LIBRARIES ${NLGENL_LIBRARY} ${NLROUTE_LIBRARY} ${NL_LIBRARY})",
+                            "new_reachability": "['NL_FOUND']"
+                        },
+                        {
+                            "new_option_code": "set(NL_LIBRARIES)",
+                            "new_reachability": "['NOT (NL_FOUND)', '']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "NL_INCLUDE_DIR",
+            "option_code": "set(NL_INCLUDE_DIR ${NL1_INCLUDE_DIR})",
+            "reachability": "['NOT (NL_LIBRARIES AND NL_INCLUDE_DIRS)', '', 'NOT (NL_LIBRARY AND NL_INCLUDE_DIR']",
+            "indirect_options": {
+                "NL_LIBRARIES": {
+                    "new_option_name": "NL_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(NL_LIBRARIES ${NLGENL_LIBRARY} ${NLROUTE_LIBRARY} ${NL_LIBRARY})",
+                            "new_reachability": "['NL_FOUND']"
+                        },
+                        {
+                            "new_option_code": "set(NL_LIBRARIES)",
+                            "new_reachability": "['NOT (NL_FOUND)', '']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES ${NLGENL_LIBRARY} ${NLROUTE_LIBRARY} ${NL_LIBRARY})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS ${NL_INCLUDE_DIR})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "NL3": [
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES ${NLGENL_LIBRARY} ${NLROUTE_LIBRARY} ${NL_LIBRARY})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS ${NL_INCLUDE_DIR})",
+            "reachability": "['NL_FOUND']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": "set(NL_LIBRARIES)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": "set(NL_INCLUDE_DIRS)",
+            "reachability": "['NOT (NL_FOUND)', '']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "NL_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ]
+}

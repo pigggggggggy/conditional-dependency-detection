@@ -1,0 +1,228 @@
+{
+    "Tomahawk": [
+        {
+            "option_name": "BUILD_GUI",
+            "option_code": "option(BUILD_GUI \"Build Tomahawk with GUI\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_HATCHET",
+            "option_code": "option(BUILD_HATCHET \"Build the Hatchet plugin\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "TOMAHAWK_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "SUBDIRECTORY",
+            "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "TOMAHAWK_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "SUBDIRECTORY",
+            "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "TOMAHAWK_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "SUBDIRECTORY",
+            "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "TOMAHAWK_LIBRARIES",
+            "option_code": "set(TOMAHAWK_LIBRARIES \"${TOMAHAWK_LIBRARY}\")",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "OpenSSL": [
+        {
+            "option_name": "BUILD_GUI",
+            "option_code": "option(BUILD_GUI \"Build Tomahawk with GUI\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_HATCHET",
+            "option_code": "option(BUILD_HATCHET \"Build the Hatchet plugin\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "SUBDIRECTORY",
+            "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "SUBDIRECTORY",
+            "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "SUBDIRECTORY",
+            "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "websocketpp": [
+        {
+            "option_name": "BUILD_GUI",
+            "option_code": "option(BUILD_GUI \"Build Tomahawk with GUI\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_HATCHET",
+            "option_code": "option(BUILD_HATCHET \"Build the Hatchet plugin\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "SUBDIRECTORY",
+            "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "SUBDIRECTORY",
+            "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "SUBDIRECTORY",
+            "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "Qt5Test": [
+        {
+            "option_name": "BUILD_TESTS",
+            "option_code": "option(BUILD_TESTS \"Build Tomahawk with unit tests\" ${BUILD_NO_RELEASE})",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "PC_QCA2": [
+        {
+            "option_name": "QCA2_LIBRARIES",
+            "option_code": "set(QCA2_LIBRARIES \"qca-qt5\" CACHE STRING \"QCA2 Qt5 target\")",
+            "reachability": "['Qca-qt5_DIR']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QCA2_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QCA2_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QCA2_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QCA2_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QCA2_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "libquazip5.dll": [
+        {
+            "option_name": "QUAZIP_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QUAZIP_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QUAZIP_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "PC_QUAZIP": [
+        {
+            "option_name": "QUAZIP_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QUAZIP_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QUAZIP_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "QUAZIP_LIBRARIES": [
+        {
+            "option_name": "QUAZIP_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QUAZIP_LIBRARIES",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QUAZIP_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ]
+}

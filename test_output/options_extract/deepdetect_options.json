@@ -1,0 +1,334 @@
+{
+    "Protobuf": [
+        {
+            "option_name": "USE_CAFFE",
+            "option_code": "option(USE_CAFFE \"build caffe backend\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_CAFFE",
+            "option_code": "option(USE_CAFFE \"build caffe backend\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_TORCH",
+            "option_code": "option(USE_TORCH \"use libtorch backend\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_TORCH",
+            "option_code": "option(USE_TORCH \"use libtorch backend\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_PROTOBUF",
+            "option_code": "option(BUILD_PROTOBUF \"build PROTOBUF instead of using system library\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_PROTOBUF",
+            "option_code": "option(BUILD_PROTOBUF \"build PROTOBUF instead of using system library\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "PkgConfig": [
+        {
+            "option_name": "USE_CAFFE2",
+            "option_code": "option(USE_CAFFE2 \"build caffe2 backend\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_TF",
+            "option_code": "option(USE_TF \"use TF backend\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "hdf5_cpp": [
+        {
+            "option_name": "USE_HDF5",
+            "option_code": "option(USE_HDF5 \"use HDF5\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "CUDNN": [
+        {
+            "option_name": "USE_CUDNN",
+            "option_code": "option(USE_CUDNN \"enable CUDNN\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_CUDNN",
+            "option_code": "set(USE_CUDNN OFF)",
+            "reachability": "['APPLE']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_CUDNN",
+            "option_code": "set(USE_CUDNN OFF)",
+            "reachability": "['USE_CPU_ONLY']",
+            "indirect_options": {}
+        }
+    ],
+    "libcudnn.so": [
+        {
+            "option_name": "USE_CUDNN",
+            "option_code": "option(USE_CUDNN \"enable CUDNN\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_CUDNN",
+            "option_code": "set(USE_CUDNN OFF)",
+            "reachability": "['APPLE']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_CUDNN",
+            "option_code": "set(USE_CUDNN OFF)",
+            "reachability": "['USE_CPU_ONLY']",
+            "indirect_options": {}
+        }
+    ],
+    "spdlog": [
+        {
+            "option_name": "BUILD_SPDLOG",
+            "option_code": "option(BUILD_SPDLOG \"build SPDLOG instead of using system library\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "absl": [
+        {
+            "option_name": "BUILD_PROTOBUF",
+            "option_code": "option(BUILD_PROTOBUF \"build PROTOBUF instead of using system library\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "Boost": [
+        {
+            "option_name": "USE_BOOST_BACKTRACE",
+            "option_code": "option(USE_BOOST_BACKTRACE \"use boost backtrace\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_BOOST_BACKTRACE",
+            "option_code": "option(USE_BOOST_BACKTRACE \"use boost backtrace\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "OPENMP_LIBRARIES": [
+        {
+            "option_name": "USE_OPENMP",
+            "option_code": "option(USE_OPENMP \"use OpenMP\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "GTest": [
+        {
+            "option_name": "BUILD_TESTS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "PythonInterp": [
+        {
+            "option_name": "BUILD_TESTS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "OpenCV": [
+        {
+            "option_name": "USE_OPENCV_VERSION",
+            "option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_OPENCV_VERSION",
+            "option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_OPENCV_VERSION",
+            "option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_OPENCV_VERSION",
+            "option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "OpenCV_FOUND",
+            "option_code": "find_package(OpenCV 3 QUIET COMPONENTS ${OPENCV_MODULES})",
+            "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"']",
+            "indirect_options": {
+                "USE_OPENCV_VERSION": {
+                    "new_option_name": "USE_OPENCV_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+                            "new_reachability": "[]"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "OpenCV_FOUND",
+            "option_code": "find_package(OpenCV 3 QUIET COMPONENTS ${OPENCV_MODULES})",
+            "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"']",
+            "indirect_options": {
+                "USE_OPENCV_VERSION": {
+                    "new_option_name": "USE_OPENCV_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+                            "new_reachability": "[]"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "OpenCV_FOUND",
+            "option_code": "find_package(OpenCV 4 QUIET COMPONENTS ${OPENCV_MODULES})",
+            "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+            "indirect_options": {
+                "USE_OPENCV_VERSION": {
+                    "new_option_name": "USE_OPENCV_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+                            "new_reachability": "[]"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "OpenCV_FOUND",
+            "option_code": "find_package(OpenCV 4 QUIET COMPONENTS ${OPENCV_MODULES})",
+            "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+            "indirect_options": {
+                "USE_OPENCV_VERSION": {
+                    "new_option_name": "USE_OPENCV_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+                            "new_reachability": "[]"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "OpenCV_FOUND",
+            "option_code": "find_package(OpenCV 2 REQUIRED COMPONENTS ${OPENCV_MODULES})",
+            "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+            "indirect_options": {
+                "USE_OPENCV_VERSION": {
+                    "new_option_name": "USE_OPENCV_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+                            "new_reachability": "[]"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "OpenCV_FOUND",
+            "option_code": "find_package(OpenCV 2 REQUIRED COMPONENTS ${OPENCV_MODULES})",
+            "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+            "indirect_options": {
+                "USE_OPENCV_VERSION": {
+                    "new_option_name": "USE_OPENCV_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+                            "new_reachability": "[]"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "OpenCV_FOUND",
+            "option_code": "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
+            "reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', '']",
+            "indirect_options": {
+                "USE_OPENCV_VERSION": {
+                    "new_option_name": "USE_OPENCV_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+                            "new_reachability": "[]"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "OpenCV_FOUND",
+            "option_code": "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
+            "reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', '']",
+            "indirect_options": {
+                "USE_OPENCV_VERSION": {
+                    "new_option_name": "USE_OPENCV_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+                            "new_reachability": "[]"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        }
+    ]
+}

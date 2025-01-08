@@ -1,0 +1,18 @@
+{
+    "glog": [
+        {
+            "option_name": "NATRON_SYSTEM_LIBS",
+            "option_code": "option(NATRON_SYSTEM_LIBS \"use system versions of dependencies instead of bundled ones\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "Ceres": [
+        {
+            "option_name": "NATRON_SYSTEM_LIBS",
+            "option_code": "option(NATRON_SYSTEM_LIBS \"use system versions of dependencies instead of bundled ones\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ]
+}

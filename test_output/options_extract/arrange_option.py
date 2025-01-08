@@ -49,7 +49,7 @@ def load_reachability_data(input_file):
 
 
 def recursive_indirect_options(option, code, reachability, reachability_data, input_file, depth=0):
-    if depth >= 4:
+    if depth >= 3:
         return {}
 
     cleaned_reachability = clean_and_process_reachability(reachability)
