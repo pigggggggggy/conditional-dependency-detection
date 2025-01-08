@@ -1,0 +1,281 @@
+{
+    "Qt5DBus": [
+        {
+            "option_name": "HAVE_X11",
+            "option_code": "set(HAVE_X11 ON)",
+            "reachability": "['X11_FOUND']",
+            "indirect_options": {
+                "X11_FOUND": {
+                    "new_option_name": "X11_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_package(X11)",
+                            "new_reachability": "['NOT APPLE']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "HAVE_X11",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "CppUnit": [
+        {
+            "option_name": "USE_SYSTEM_TAGLIB",
+            "option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" ON)",
+            "reachability": "['TAGLIB_VERSION VERSION_GREATER 1.11.1']",
+            "indirect_options": {
+                "TAGLIB_VERSION": {
+                    "new_option_name": "TAGLIB_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(TAGLIB_VERSION 1.11.1)",
+                            "new_reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "USE_SYSTEM_TAGLIB",
+            "option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" OFF)",
+            "reachability": "['NOT (TAGLIB_VERSION VERSION_GREATER 1.11.1)', '']",
+            "indirect_options": {
+                "TAGLIB_VERSION": {
+                    "new_option_name": "TAGLIB_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(TAGLIB_VERSION 1.11.1)",
+                            "new_reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '']"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "BUILD_TESTS",
+            "option_code": "set(BUILD_TESTS OFF)",
+            "reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '', 'BUILD_TESTS AND NOT BUILD_SHARED_LIBS', 'NOT CppUnit_FOUND']",
+            "indirect_options": {}
+        }
+    ],
+    "SPARKLE": [
+        {
+            "option_name": "APPLE",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "APPLE",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "APPLE",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "X11": [
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "LIBPROJECTM": [
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "GLEW": [
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "glew32.dll": [
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_NATIVE_GLEW",
+            "option_code": "set(USE_NATIVE_GLEW OFF)",
+            "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "FREETYPE2": [
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_FTGL",
+            "option_code": "set(USE_FTGL OFF)",
+            "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "FTGL": [
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_FTGL",
+            "option_code": "set(USE_FTGL OFF)",
+            "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "QTSINGLEAPPLICATION_LIBRARIES": [
+        {
+            "option_name": "USE_SYSTEM_QTSINGLEAPPLICATION",
+            "option_code": "option(USE_SYSTEM_QTSINGLEAPPLICATION \"Don't set this option unless your system QtSingleApplication library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "QTSINGLECOREAPPLICATION_LIBRARIES": [
+        {
+            "option_name": "USE_SYSTEM_QTSINGLEAPPLICATION",
+            "option_code": "option(USE_SYSTEM_QTSINGLEAPPLICATION \"Don't set this option unless your system QtSingleApplication library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "QXT_LIBRARIES": [
+        {
+            "option_name": "USE_SYSTEM_QXT",
+            "option_code": "option(USE_SYSTEM_QXT \"Don't set this option unless your system Qxt library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "GTEST_LIBRARIES": [
+        {
+            "option_name": "GMOCK_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        }
+    ],
+    "QJSON": [
+        {
+            "option_name": "WIN32",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QJSON_LIBRARIES",
+            "option_code": "find_library(QJSON_LIBRARIES NAMES qjson PATHS ${QJSON_LIBRARY_DIRS} ${LIB_INSTALL_DIR} ${KDE4_LIB_DIR})",
+            "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QJSON_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QJSON_LIBRARIES",
+            "option_code": "set(QJSON_LIBRARIES \"${QJSON_LIBRARIES}${QJSON_LDFLAGS}\" CACHE INTERNAL \"\")",
+            "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES', 'UNIX AND NOT APPLE']",
+            "indirect_options": {}
+        }
+    ],
+    "qjson": [
+        {
+            "option_name": "QJSON_LIBRARIES",
+            "option_code": "find_library(QJSON_LIBRARIES NAMES qjson PATHS ${QJSON_LIBRARY_DIRS} ${LIB_INSTALL_DIR} ${KDE4_LIB_DIR})",
+            "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES']",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QJSON_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QJSON_LIBRARIES",
+            "option_code": "set(QJSON_LIBRARIES \"${QJSON_LIBRARIES}${QJSON_LDFLAGS}\" CACHE INTERNAL \"\")",
+            "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES', 'UNIX AND NOT APPLE']",
+            "indirect_options": {}
+        }
+    ]
+}

@@ -1,0 +1,378 @@
+{
+    "CURL": [
+        {
+            "option_name": "BUILD_SERVER",
+            "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_CURL",
+            "option_code": "option(FEATURE_CURL \"Enable auto-download support using cURL (client)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "OpenSSL": [
+        {
+            "option_name": "BUILD_SERVER",
+            "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_SSL",
+            "option_code": "option(FEATURE_SSL \"Build SSL for curl and authentication\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "SQLite3": [
+        {
+            "option_name": "BUILD_SERVER",
+            "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_MOD",
+            "option_code": "option(BUILD_MOD \"Build the mod libraries\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_MOD",
+            "option_code": "option(BUILD_MOD \"Build the mod libraries\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_DBMS",
+            "option_code": "option(FEATURE_DBMS \"Enable dbms support (sqlite3)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_DBMS",
+            "option_code": "option(FEATURE_DBMS \"Enable dbms support (sqlite3)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_DBMS",
+            "option_code": "option(FEATURE_DBMS \"Enable dbms support (sqlite3)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "ZLIB": [
+        {
+            "option_name": "BUILD_SERVER",
+            "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "MiniZip": [
+        {
+            "option_name": "BUILD_SERVER",
+            "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "Iconv": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "audio_toolbox_library": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "carbon_library": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "core_audio_library": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "core_video_library": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "force_feedback_library": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "opengl_library": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "core_haptics_library": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "game_controller_library": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "X11": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "GLEW": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_RENDERER1",
+            "option_code": "option(FEATURE_RENDERER1 \"Build and use the vanilla renderer (OpenGL 1/2)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_RENDERER2",
+            "option_code": "option(FEATURE_RENDERER2 \"Build and use the borked renderer (OpenGL 3)\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "OpenGL": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_RENDERER1",
+            "option_code": "option(FEATURE_RENDERER1 \"Build and use the vanilla renderer (OpenGL 1/2)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_RENDERER2",
+            "option_code": "option(FEATURE_RENDERER2 \"Build and use the borked renderer (OpenGL 3)\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "GLES": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_RENDERER_GLES",
+            "option_code": "option(FEATURE_RENDERER_GLES \"Build and use OpenGL ES renderer\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "Vulkan": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_RENDERER_VULKAN",
+            "option_code": "option(FEATURE_RENDERER_VULKAN \"Build and use Vulkan renderer\" OFF)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "JPEGTURBO": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "JPEG": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "Freetype": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_FREETYPE",
+            "option_code": "option(FEATURE_FREETYPE \"Enable Freetype font library support (client)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "PNG": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_PNG",
+            "option_code": "option(FEATURE_PNG \"Enable PNG screenshot support (client)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "OpenAL": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_OPENAL",
+            "option_code": "option(FEATURE_OPENAL \"Enable OpenAL sound backend (client)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "Vorbis": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_OGG_VORBIS",
+            "option_code": "option(FEATURE_OGG_VORBIS \"Enable OGG Vorbis support (client)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "Theora": [
+        {
+            "option_name": "BUILD_CLIENT",
+            "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_THEORA",
+            "option_code": "option(FEATURE_THEORA \"Enable Theora video support (client)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "Lua": [
+        {
+            "option_name": "BUILD_MOD",
+            "option_code": "option(BUILD_MOD \"Build the mod libraries\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "FEATURE_LUA",
+            "option_code": "option(FEATURE_LUA \"Enable Lua support (mod)\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "m": [
+        {
+            "option_name": "BUILD_MOD",
+            "option_code": "option(BUILD_MOD \"Build the mod libraries\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ],
+    "security_library": [
+        {
+            "option_name": "FEATURE_SSL",
+            "option_code": "option(FEATURE_SSL \"Build SSL for curl and authentication\" ON)",
+            "reachability": "[]",
+            "indirect_options": {}
+        }
+    ]
+}
