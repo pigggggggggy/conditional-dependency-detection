@@ -4,84 +4,112 @@
             "option_name": "BUILD_SERVER",
             "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
             "reachability": "[]",
+            "actor_id": "71",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_CURL",
             "option_code": "option(FEATURE_CURL \"Enable auto-download support using cURL (client)\" ON)",
             "reachability": "[]",
+            "actor_id": "78",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_CURL",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -90,138 +118,184 @@
             "option_name": "BUILD_SERVER",
             "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
             "reachability": "[]",
+            "actor_id": "71",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_SSL",
             "option_code": "option(FEATURE_SSL \"Build SSL for curl and authentication\" ON)",
             "reachability": "[]",
+            "actor_id": "79",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_SSL",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "WIN32",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_SSL",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUNDLED_OPENSSL",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "WIN32",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -230,138 +304,184 @@
             "option_name": "BUILD_SERVER",
             "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
             "reachability": "[]",
+            "actor_id": "71",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": "option(BUILD_MOD \"Build the mod libraries\" ON)",
             "reachability": "[]",
+            "actor_id": "73",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": "option(BUILD_MOD \"Build the mod libraries\" ON)",
             "reachability": "[]",
+            "actor_id": "73",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_DBMS",
             "option_code": "option(FEATURE_DBMS \"Enable dbms support (sqlite3)\" ON)",
             "reachability": "[]",
+            "actor_id": "102",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_DBMS",
             "option_code": "option(FEATURE_DBMS \"Enable dbms support (sqlite3)\" ON)",
             "reachability": "[]",
+            "actor_id": "102",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_DBMS",
             "option_code": "option(FEATURE_DBMS \"Enable dbms support (sqlite3)\" ON)",
             "reachability": "[]",
+            "actor_id": "102",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -370,72 +490,96 @@
             "option_name": "BUILD_SERVER",
             "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
             "reachability": "[]",
+            "actor_id": "71",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -444,72 +588,96 @@
             "option_name": "BUILD_SERVER",
             "option_code": "option(BUILD_SERVER \"Build the dedicated server executable\" ON)",
             "reachability": "[]",
+            "actor_id": "71",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -518,96 +686,128 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -616,96 +816,128 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -714,96 +946,128 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -812,96 +1076,128 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -910,96 +1206,128 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1008,96 +1336,128 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1106,96 +1466,128 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1204,96 +1596,128 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1302,96 +1726,128 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1400,108 +1856,144 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "WIN32",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "WIN32",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1510,102 +2002,136 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER1",
             "option_code": "option(FEATURE_RENDERER1 \"Build and use the vanilla renderer (OpenGL 1/2)\" ON)",
             "reachability": "[]",
+            "actor_id": "91",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER2",
             "option_code": "option(FEATURE_RENDERER2 \"Build and use the borked renderer (OpenGL 3)\" OFF)",
             "reachability": "[]",
+            "actor_id": "92",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "WIN32",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "WIN32",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER1",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER2",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1614,90 +2140,120 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER1",
             "option_code": "option(FEATURE_RENDERER1 \"Build and use the vanilla renderer (OpenGL 1/2)\" ON)",
             "reachability": "[]",
+            "actor_id": "91",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER2",
             "option_code": "option(FEATURE_RENDERER2 \"Build and use the borked renderer (OpenGL 3)\" OFF)",
             "reachability": "[]",
+            "actor_id": "92",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER1",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER2",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1706,72 +2262,96 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER_GLES",
             "option_code": "option(FEATURE_RENDERER_GLES \"Build and use OpenGL ES renderer\" OFF)",
             "reachability": "[]",
+            "actor_id": "93",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1780,72 +2360,96 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_RENDERER_VULKAN",
             "option_code": "option(FEATURE_RENDERER_VULKAN \"Build and use Vulkan renderer\" OFF)",
             "reachability": "[]",
+            "actor_id": "94",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1854,66 +2458,88 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -1922,79 +2548,105 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "JPEGTURBO_FOUND",
             "option_code": "find_package(JPEGTURBO)",
             "reachability": "['BUILD_CLIENT', 'NOT BUNDLED_JPEG']",
+            "actor_id": "1182",
+            "new_related_options": "BUILD_CLIENT BUNDLED_JPEG",
             "indirect_options": {
                 "BUILD_CLIENT": {
                     "new_option_name": "BUILD_CLIENT",
                     "new_option_code_reachabilities": [
                         {
                             "new_option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
-                            "new_reachability": "[]"
+                            "new_reachability": "[]",
+                            "actor_id": "72",
+                            "new_related_options": ""
                         }
                     ],
                     "new_indirect_options": [
@@ -2009,78 +2661,104 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_FREETYPE",
             "option_code": "option(FEATURE_FREETYPE \"Enable Freetype font library support (client)\" ON)",
             "reachability": "[]",
+            "actor_id": "83",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_FREETYPE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2089,78 +2767,104 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_PNG",
             "option_code": "option(FEATURE_PNG \"Enable PNG screenshot support (client)\" ON)",
             "reachability": "[]",
+            "actor_id": "84",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_PNG",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2169,84 +2873,112 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_OPENAL",
             "option_code": "option(FEATURE_OPENAL \"Enable OpenAL sound backend (client)\" ON)",
             "reachability": "[]",
+            "actor_id": "82",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_OPENAL",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_OPENAL",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2255,78 +2987,104 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_OGG_VORBIS",
             "option_code": "option(FEATURE_OGG_VORBIS \"Enable OGG Vorbis support (client)\" ON)",
             "reachability": "[]",
+            "actor_id": "80",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_OGG_VORBIS",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2335,78 +3093,104 @@
             "option_name": "BUILD_CLIENT",
             "option_code": "option(BUILD_CLIENT \"Build the client executable\" ON)",
             "reachability": "[]",
+            "actor_id": "72",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_THEORA",
             "option_code": "option(FEATURE_THEORA \"Enable Theora video support (client)\" ON)",
             "reachability": "[]",
+            "actor_id": "81",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_THEORA",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_CLIENT",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2415,36 +3199,48 @@
             "option_name": "BUILD_MOD",
             "option_code": "option(BUILD_MOD \"Build the mod libraries\" ON)",
             "reachability": "[]",
+            "actor_id": "73",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_LUA",
             "option_code": "option(FEATURE_LUA \"Enable Lua support (mod)\" ON)",
             "reachability": "[]",
+            "actor_id": "86",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_LUA",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2453,24 +3249,32 @@
             "option_name": "BUILD_MOD",
             "option_code": "option(BUILD_MOD \"Build the mod libraries\" ON)",
             "reachability": "[]",
+            "actor_id": "73",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_MOD",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2479,54 +3283,72 @@
             "option_name": "FEATURE_SSL",
             "option_code": "option(FEATURE_SSL \"Build SSL for curl and authentication\" ON)",
             "reachability": "[]",
+            "actor_id": "79",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_SSL",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "FEATURE_SSL",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUNDLED_OPENSSL",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2535,30 +3357,40 @@
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2567,30 +3399,40 @@
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2599,30 +3441,40 @@
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2631,30 +3483,40 @@
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2663,30 +3525,40 @@
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2695,42 +3567,56 @@
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "APPLE",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "LUA_LIBRARY",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "LUA_LIBRARY",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -2739,12 +3625,16 @@
             "option_name": "WIN32",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "WIN32",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ]

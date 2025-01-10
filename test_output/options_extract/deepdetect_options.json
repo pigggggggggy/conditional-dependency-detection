@@ -4,36 +4,48 @@
             "option_name": "USE_CAFFE",
             "option_code": "option(USE_CAFFE \"build caffe backend\" ON)",
             "reachability": "[]",
+            "actor_id": "5",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_CAFFE",
             "option_code": "option(USE_CAFFE \"build caffe backend\" ON)",
             "reachability": "[]",
+            "actor_id": "5",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_TORCH",
             "option_code": "option(USE_TORCH \"use libtorch backend\" OFF)",
             "reachability": "[]",
+            "actor_id": "10",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_TORCH",
             "option_code": "option(USE_TORCH \"use libtorch backend\" OFF)",
             "reachability": "[]",
+            "actor_id": "10",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_PROTOBUF",
             "option_code": "option(BUILD_PROTOBUF \"build PROTOBUF instead of using system library\" ON)",
             "reachability": "[]",
+            "actor_id": "23",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_PROTOBUF",
             "option_code": "option(BUILD_PROTOBUF \"build PROTOBUF instead of using system library\" ON)",
             "reachability": "[]",
+            "actor_id": "23",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -42,12 +54,16 @@
             "option_name": "USE_CAFFE2",
             "option_code": "option(USE_CAFFE2 \"build caffe2 backend\" OFF)",
             "reachability": "[]",
+            "actor_id": "7",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_TF",
             "option_code": "option(USE_TF \"use TF backend\" OFF)",
             "reachability": "[]",
+            "actor_id": "8",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -56,6 +72,8 @@
             "option_name": "USE_HDF5",
             "option_code": "option(USE_HDF5 \"use HDF5\" ON)",
             "reachability": "[]",
+            "actor_id": "11",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -64,18 +82,24 @@
             "option_name": "USE_CUDNN",
             "option_code": "option(USE_CUDNN \"enable CUDNN\" ON)",
             "reachability": "[]",
+            "actor_id": "16",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_CUDNN",
             "option_code": "set(USE_CUDNN OFF)",
             "reachability": "['APPLE']",
+            "actor_id": "69",
+            "new_related_options": "APPLE",
             "indirect_options": {}
         },
         {
             "option_name": "USE_CUDNN",
             "option_code": "set(USE_CUDNN OFF)",
             "reachability": "['USE_CPU_ONLY']",
+            "actor_id": "181",
+            "new_related_options": "USE_CPU_ONLY",
             "indirect_options": {}
         }
     ],
@@ -84,18 +108,24 @@
             "option_name": "USE_CUDNN",
             "option_code": "option(USE_CUDNN \"enable CUDNN\" ON)",
             "reachability": "[]",
+            "actor_id": "16",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_CUDNN",
             "option_code": "set(USE_CUDNN OFF)",
             "reachability": "['APPLE']",
+            "actor_id": "69",
+            "new_related_options": "APPLE",
             "indirect_options": {}
         },
         {
             "option_name": "USE_CUDNN",
             "option_code": "set(USE_CUDNN OFF)",
             "reachability": "['USE_CPU_ONLY']",
+            "actor_id": "181",
+            "new_related_options": "USE_CPU_ONLY",
             "indirect_options": {}
         }
     ],
@@ -104,6 +134,8 @@
             "option_name": "BUILD_SPDLOG",
             "option_code": "option(BUILD_SPDLOG \"build SPDLOG instead of using system library\" ON)",
             "reachability": "[]",
+            "actor_id": "22",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -112,6 +144,8 @@
             "option_name": "BUILD_PROTOBUF",
             "option_code": "option(BUILD_PROTOBUF \"build PROTOBUF instead of using system library\" ON)",
             "reachability": "[]",
+            "actor_id": "23",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -120,12 +154,16 @@
             "option_name": "USE_BOOST_BACKTRACE",
             "option_code": "option(USE_BOOST_BACKTRACE \"use boost backtrace\" ON)",
             "reachability": "[]",
+            "actor_id": "24",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_BOOST_BACKTRACE",
             "option_code": "option(USE_BOOST_BACKTRACE \"use boost backtrace\" ON)",
             "reachability": "[]",
+            "actor_id": "24",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -134,6 +172,8 @@
             "option_name": "USE_OPENMP",
             "option_code": "option(USE_OPENMP \"use OpenMP\" ON)",
             "reachability": "[]",
+            "actor_id": "25",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -142,6 +182,8 @@
             "option_name": "BUILD_TESTS",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -150,6 +192,8 @@
             "option_name": "BUILD_TESTS",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -158,37 +202,49 @@
             "option_name": "USE_OPENCV_VERSION",
             "option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
             "reachability": "[]",
+            "actor_id": "48",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_OPENCV_VERSION",
             "option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
             "reachability": "[]",
+            "actor_id": "48",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_OPENCV_VERSION",
             "option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
             "reachability": "[]",
+            "actor_id": "48",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "USE_OPENCV_VERSION",
             "option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
             "reachability": "[]",
+            "actor_id": "48",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "OpenCV_FOUND",
             "option_code": "find_package(OpenCV 3 QUIET COMPONENTS ${OPENCV_MODULES})",
             "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"']",
+            "actor_id": "417",
+            "new_related_options": "USE_OPENCV_VERSION STREQUAL",
             "indirect_options": {
                 "USE_OPENCV_VERSION": {
                     "new_option_name": "USE_OPENCV_VERSION",
                     "new_option_code_reachabilities": [
                         {
                             "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
-                            "new_reachability": "[]"
+                            "new_reachability": "[]",
+                            "actor_id": "48",
+                            "new_related_options": ""
                         }
                     ],
                     "new_indirect_options": [
@@ -201,13 +257,17 @@
             "option_name": "OpenCV_FOUND",
             "option_code": "find_package(OpenCV 3 QUIET COMPONENTS ${OPENCV_MODULES})",
             "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"']",
+            "actor_id": "417",
+            "new_related_options": "USE_OPENCV_VERSION STREQUAL",
             "indirect_options": {
                 "USE_OPENCV_VERSION": {
                     "new_option_name": "USE_OPENCV_VERSION",
                     "new_option_code_reachabilities": [
                         {
                             "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
-                            "new_reachability": "[]"
+                            "new_reachability": "[]",
+                            "actor_id": "48",
+                            "new_related_options": ""
                         }
                     ],
                     "new_indirect_options": [
@@ -220,16 +280,55 @@
             "option_name": "OpenCV_FOUND",
             "option_code": "find_package(OpenCV 4 QUIET COMPONENTS ${OPENCV_MODULES})",
             "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+            "actor_id": "419",
+            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND",
             "indirect_options": {
                 "USE_OPENCV_VERSION": {
                     "new_option_name": "USE_OPENCV_VERSION",
                     "new_option_code_reachabilities": [
                         {
                             "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
-                            "new_reachability": "[]"
+                            "new_reachability": "[]",
+                            "actor_id": "48",
+                            "new_related_options": ""
                         }
                     ],
                     "new_indirect_options": [
+                        {}
+                    ]
+                },
+                "OpenCV_FOUND": {
+                    "new_option_name": "OpenCV_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_package(OpenCV 3 QUIET COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"']",
+                            "actor_id": "417",
+                            "new_related_options": "USE_OPENCV_VERSION STREQUAL"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV 4 QUIET COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+                            "actor_id": "419",
+                            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV 2 REQUIRED COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+                            "actor_id": "421",
+                            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', '']",
+                            "actor_id": "423",
+                            "new_related_options": "USE_OPENCV_VERSION STREQUAL"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {},
+                        {},
                         {}
                     ]
                 }
@@ -239,16 +338,55 @@
             "option_name": "OpenCV_FOUND",
             "option_code": "find_package(OpenCV 4 QUIET COMPONENTS ${OPENCV_MODULES})",
             "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+            "actor_id": "419",
+            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND",
             "indirect_options": {
                 "USE_OPENCV_VERSION": {
                     "new_option_name": "USE_OPENCV_VERSION",
                     "new_option_code_reachabilities": [
                         {
                             "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
-                            "new_reachability": "[]"
+                            "new_reachability": "[]",
+                            "actor_id": "48",
+                            "new_related_options": ""
                         }
                     ],
                     "new_indirect_options": [
+                        {}
+                    ]
+                },
+                "OpenCV_FOUND": {
+                    "new_option_name": "OpenCV_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_package(OpenCV 3 QUIET COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"']",
+                            "actor_id": "417",
+                            "new_related_options": "USE_OPENCV_VERSION STREQUAL"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV 4 QUIET COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+                            "actor_id": "419",
+                            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV 2 REQUIRED COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+                            "actor_id": "421",
+                            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', '']",
+                            "actor_id": "423",
+                            "new_related_options": "USE_OPENCV_VERSION STREQUAL"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {},
+                        {},
                         {}
                     ]
                 }
@@ -258,16 +396,55 @@
             "option_name": "OpenCV_FOUND",
             "option_code": "find_package(OpenCV 2 REQUIRED COMPONENTS ${OPENCV_MODULES})",
             "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+            "actor_id": "421",
+            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND",
             "indirect_options": {
                 "USE_OPENCV_VERSION": {
                     "new_option_name": "USE_OPENCV_VERSION",
                     "new_option_code_reachabilities": [
                         {
                             "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
-                            "new_reachability": "[]"
+                            "new_reachability": "[]",
+                            "actor_id": "48",
+                            "new_related_options": ""
                         }
                     ],
                     "new_indirect_options": [
+                        {}
+                    ]
+                },
+                "OpenCV_FOUND": {
+                    "new_option_name": "OpenCV_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_package(OpenCV 3 QUIET COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"']",
+                            "actor_id": "417",
+                            "new_related_options": "USE_OPENCV_VERSION STREQUAL"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV 4 QUIET COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+                            "actor_id": "419",
+                            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV 2 REQUIRED COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+                            "actor_id": "421",
+                            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', '']",
+                            "actor_id": "423",
+                            "new_related_options": "USE_OPENCV_VERSION STREQUAL"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {},
+                        {},
                         {}
                     ]
                 }
@@ -277,13 +454,75 @@
             "option_name": "OpenCV_FOUND",
             "option_code": "find_package(OpenCV 2 REQUIRED COMPONENTS ${OPENCV_MODULES})",
             "reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+            "actor_id": "421",
+            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND",
             "indirect_options": {
                 "USE_OPENCV_VERSION": {
                     "new_option_name": "USE_OPENCV_VERSION",
                     "new_option_code_reachabilities": [
                         {
                             "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
-                            "new_reachability": "[]"
+                            "new_reachability": "[]",
+                            "actor_id": "48",
+                            "new_related_options": ""
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                },
+                "OpenCV_FOUND": {
+                    "new_option_name": "OpenCV_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_package(OpenCV 3 QUIET COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"']",
+                            "actor_id": "417",
+                            "new_related_options": "USE_OPENCV_VERSION STREQUAL"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV 4 QUIET COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+                            "actor_id": "419",
+                            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV 2 REQUIRED COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['USE_OPENCV_VERSION STREQUAL \"\"', 'NOT OpenCV_FOUND']",
+                            "actor_id": "421",
+                            "new_related_options": "USE_OPENCV_VERSION  OpenCV_FOUND"
+                        },
+                        {
+                            "new_option_code": "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
+                            "new_reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', '']",
+                            "actor_id": "423",
+                            "new_related_options": "USE_OPENCV_VERSION STREQUAL"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "OpenCV_FOUND",
+            "option_code": "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
+            "reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', '']",
+            "actor_id": "423",
+            "new_related_options": "USE_OPENCV_VERSION STREQUAL",
+            "indirect_options": {
+                "USE_OPENCV_VERSION": {
+                    "new_option_name": "USE_OPENCV_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
+                            "new_reachability": "[]",
+                            "actor_id": "48",
+                            "new_related_options": ""
                         }
                     ],
                     "new_indirect_options": [
@@ -296,32 +535,17 @@
             "option_name": "OpenCV_FOUND",
             "option_code": "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
             "reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', '']",
+            "actor_id": "423",
+            "new_related_options": "USE_OPENCV_VERSION STREQUAL",
             "indirect_options": {
                 "USE_OPENCV_VERSION": {
                     "new_option_name": "USE_OPENCV_VERSION",
                     "new_option_code_reachabilities": [
                         {
                             "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
-                            "new_reachability": "[]"
-                        }
-                    ],
-                    "new_indirect_options": [
-                        {}
-                    ]
-                }
-            }
-        },
-        {
-            "option_name": "OpenCV_FOUND",
-            "option_code": "find_package(OpenCV ${USE_OPENCV_VERSION} REQUIRED COMPONENTS ${OPENCV_MODULES})",
-            "reachability": "['NOT (USE_OPENCV_VERSION STREQUAL \"\")', '']",
-            "indirect_options": {
-                "USE_OPENCV_VERSION": {
-                    "new_option_name": "USE_OPENCV_VERSION",
-                    "new_option_code_reachabilities": [
-                        {
-                            "new_option_code": "set(USE_OPENCV_VERSION CACHE STRING \"OpenCV Version used by DeepDetect\")",
-                            "new_reachability": "[]"
+                            "new_reachability": "[]",
+                            "actor_id": "48",
+                            "new_related_options": ""
                         }
                     ],
                     "new_indirect_options": [

@@ -4,54 +4,72 @@
             "option_name": "BUILD_GUI",
             "option_code": "option(BUILD_GUI \"Build Tomahawk with GUI\" ON)",
             "reachability": "[]",
+            "actor_id": "55",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_HATCHET",
             "option_code": "option(BUILD_HATCHET \"Build the Hatchet plugin\" OFF)",
             "reachability": "[]",
+            "actor_id": "58",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "TOMAHAWK_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "SUBDIRECTORY",
             "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
             "reachability": "[]",
+            "actor_id": "1469",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "TOMAHAWK_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "SUBDIRECTORY",
             "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
             "reachability": "[]",
+            "actor_id": "1758",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "TOMAHAWK_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "SUBDIRECTORY",
             "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
             "reachability": "[]",
+            "actor_id": "2265",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "TOMAHAWK_LIBRARIES",
             "option_code": "set(TOMAHAWK_LIBRARIES \"${TOMAHAWK_LIBRARY}\")",
             "reachability": "[]",
+            "actor_id": "2791",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -60,30 +78,40 @@
             "option_name": "BUILD_GUI",
             "option_code": "option(BUILD_GUI \"Build Tomahawk with GUI\" ON)",
             "reachability": "[]",
+            "actor_id": "55",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_HATCHET",
             "option_code": "option(BUILD_HATCHET \"Build the Hatchet plugin\" OFF)",
             "reachability": "[]",
+            "actor_id": "58",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "SUBDIRECTORY",
             "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
             "reachability": "[]",
+            "actor_id": "1469",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "SUBDIRECTORY",
             "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
             "reachability": "[]",
+            "actor_id": "1758",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "SUBDIRECTORY",
             "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
             "reachability": "[]",
+            "actor_id": "2265",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -92,30 +120,40 @@
             "option_name": "BUILD_GUI",
             "option_code": "option(BUILD_GUI \"Build Tomahawk with GUI\" ON)",
             "reachability": "[]",
+            "actor_id": "55",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "BUILD_HATCHET",
             "option_code": "option(BUILD_HATCHET \"Build the Hatchet plugin\" OFF)",
             "reachability": "[]",
+            "actor_id": "58",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "SUBDIRECTORY",
             "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
             "reachability": "[]",
+            "actor_id": "1469",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "SUBDIRECTORY",
             "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
             "reachability": "[]",
+            "actor_id": "1758",
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "SUBDIRECTORY",
             "option_code": "foreach(SUBDIRECTORY ${SUBDIRECTORIES})...MASKED_CONTENT...",
             "reachability": "[]",
+            "actor_id": "2265",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -124,6 +162,8 @@
             "option_name": "BUILD_TESTS",
             "option_code": "option(BUILD_TESTS \"Build Tomahawk with unit tests\" ${BUILD_NO_RELEASE})",
             "reachability": "[]",
+            "actor_id": "56",
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -132,36 +172,48 @@
             "option_name": "QCA2_LIBRARIES",
             "option_code": "set(QCA2_LIBRARIES \"qca-qt5\" CACHE STRING \"QCA2 Qt5 target\")",
             "reachability": "['Qca-qt5_DIR']",
+            "actor_id": "514",
+            "new_related_options": "Qca-qt5_DIR",
             "indirect_options": {}
         },
         {
             "option_name": "QCA2_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QCA2_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QCA2_INCLUDE_DIR",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QCA2_INCLUDE_DIR",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QCA2_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -170,18 +222,24 @@
             "option_name": "QUAZIP_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QUAZIP_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QUAZIP_INCLUDE_DIRS",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -190,18 +248,24 @@
             "option_name": "QUAZIP_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QUAZIP_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QUAZIP_INCLUDE_DIRS",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ],
@@ -210,18 +274,24 @@
             "option_name": "QUAZIP_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QUAZIP_LIBRARIES",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         },
         {
             "option_name": "QUAZIP_INCLUDE_DIRS",
             "option_code": null,
             "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
             "indirect_options": {}
         }
     ]
