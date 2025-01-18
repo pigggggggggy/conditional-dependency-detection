@@ -1,0 +1,11 @@
+num,dependency_name,related_options,original_reachability,actor_id
+1,SQLite3,,[],18
+2,BZip2,,[],19
+3,LibArchive,,[],20
+4,ZLIB,,[],21
+5,pcre,,[],22
+6,readline,,[],23
+7,ncurses,,[],24
+8,CURL,,[],25
+9,Python3,BUILD_MCSS_DOCS,['BUILD_MCSS_DOCS'],244
+10,util,,[],145

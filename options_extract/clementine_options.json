@@ -1,0 +1,677 @@
+{
+    "Qt5DBus": [
+        {
+            "package_actor_id": "7074"
+        },
+        {
+            "option_name": "HAVE_X11",
+            "option_code": "set(HAVE_X11 ON)",
+            "reachability": "['X11_FOUND']",
+            "actor_id": "127",
+            "new_related_options": "X11_FOUND",
+            "indirect_options": {
+                "X11_FOUND": {
+                    "new_option_name": "X11_FOUND",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_package(X11)",
+                            "new_reachability": "['NOT APPLE']",
+                            "actor_id": "125",
+                            "new_related_options": "APPLE"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "HAVE_X11",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "CppUnit": [
+        {
+            "package_actor_id": "7183"
+        },
+        {
+            "option_name": "USE_SYSTEM_TAGLIB",
+            "option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" ON)",
+            "reachability": "['TAGLIB_VERSION VERSION_GREATER 1.11.1']",
+            "actor_id": "7093",
+            "new_related_options": "TAGLIB_VERSION ",
+            "indirect_options": {
+                "TAGLIB_VERSION": {
+                    "new_option_name": "TAGLIB_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(TAGLIB_VERSION 1.11.1)",
+                            "new_reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '']",
+                            "actor_id": "7108",
+                            "new_related_options": "TAGLIB_FOUND USE_SYSTEM_TAGLIB"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "USE_SYSTEM_TAGLIB": {
+                                "new_option_name": "USE_SYSTEM_TAGLIB",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" ON)",
+                                        "new_reachability": "['TAGLIB_VERSION VERSION_GREATER 1.11.1']",
+                                        "actor_id": "7093",
+                                        "new_related_options": "TAGLIB_VERSION "
+                                    },
+                                    {
+                                        "new_option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" OFF)",
+                                        "new_reachability": "['NOT (TAGLIB_VERSION VERSION_GREATER 1.11.1)', '']",
+                                        "actor_id": "7095",
+                                        "new_related_options": "TAGLIB_VERSION "
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {},
+                                    {}
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "USE_SYSTEM_TAGLIB",
+            "option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" OFF)",
+            "reachability": "['NOT (TAGLIB_VERSION VERSION_GREATER 1.11.1)', '']",
+            "actor_id": "7095",
+            "new_related_options": "TAGLIB_VERSION ",
+            "indirect_options": {
+                "TAGLIB_VERSION": {
+                    "new_option_name": "TAGLIB_VERSION",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(TAGLIB_VERSION 1.11.1)",
+                            "new_reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '']",
+                            "actor_id": "7108",
+                            "new_related_options": "TAGLIB_FOUND USE_SYSTEM_TAGLIB"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "USE_SYSTEM_TAGLIB": {
+                                "new_option_name": "USE_SYSTEM_TAGLIB",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" ON)",
+                                        "new_reachability": "['TAGLIB_VERSION VERSION_GREATER 1.11.1']",
+                                        "actor_id": "7093",
+                                        "new_related_options": "TAGLIB_VERSION "
+                                    },
+                                    {
+                                        "new_option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" OFF)",
+                                        "new_reachability": "['NOT (TAGLIB_VERSION VERSION_GREATER 1.11.1)', '']",
+                                        "actor_id": "7095",
+                                        "new_related_options": "TAGLIB_VERSION "
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {},
+                                    {}
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "BUILD_TESTS",
+            "option_code": "set(BUILD_TESTS OFF)",
+            "reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '', 'BUILD_TESTS AND NOT BUILD_SHARED_LIBS', 'NOT CppUnit_FOUND']",
+            "actor_id": "7186",
+            "new_related_options": "TAGLIB_FOUND USE_SYSTEM_TAGLIB BUILD_TESTS BUILD_SHARED_LIBS CppUnit_FOUND",
+            "indirect_options": {
+                "USE_SYSTEM_TAGLIB": {
+                    "new_option_name": "USE_SYSTEM_TAGLIB",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" ON)",
+                            "new_reachability": "['TAGLIB_VERSION VERSION_GREATER 1.11.1']",
+                            "actor_id": "7093",
+                            "new_related_options": "TAGLIB_VERSION "
+                        },
+                        {
+                            "new_option_code": "option(USE_SYSTEM_TAGLIB \"Use system taglib\" OFF)",
+                            "new_reachability": "['NOT (TAGLIB_VERSION VERSION_GREATER 1.11.1)', '']",
+                            "actor_id": "7095",
+                            "new_related_options": "TAGLIB_VERSION "
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "TAGLIB_VERSION": {
+                                "new_option_name": "TAGLIB_VERSION",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "set(TAGLIB_VERSION 1.11.1)",
+                                        "new_reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '']",
+                                        "actor_id": "7108",
+                                        "new_related_options": "TAGLIB_FOUND USE_SYSTEM_TAGLIB"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {}
+                                ]
+                            }
+                        },
+                        {}
+                    ]
+                },
+                "BUILD_TESTS": {
+                    "new_option_name": "BUILD_TESTS",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "set(BUILD_TESTS OFF)",
+                            "new_reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '', 'BUILD_TESTS AND NOT BUILD_SHARED_LIBS', 'NOT CppUnit_FOUND']",
+                            "actor_id": "7186",
+                            "new_related_options": "TAGLIB_FOUND USE_SYSTEM_TAGLIB BUILD_TESTS BUILD_SHARED_LIBS CppUnit_FOUND"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {
+                            "CppUnit_FOUND": {
+                                "new_option_name": "CppUnit_FOUND",
+                                "new_option_code_reachabilities": [
+                                    {
+                                        "new_option_code": "find_package(CppUnit)",
+                                        "new_reachability": "['NOT (TAGLIB_FOUND AND USE_SYSTEM_TAGLIB)', '', 'BUILD_TESTS AND NOT BUILD_SHARED_LIBS']",
+                                        "actor_id": "7183",
+                                        "new_related_options": "TAGLIB_FOUND USE_SYSTEM_TAGLIB BUILD_TESTS BUILD_SHARED_LIBS"
+                                    }
+                                ],
+                                "new_indirect_options": [
+                                    {}
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "X11": [
+        {
+            "package_actor_id": "9750"
+        },
+        {
+            "option_name": "APPLE",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "APPLE",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "8008",
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "8008",
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "APPLE",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "SPARKLE": [
+        {
+            "package_actor_id": "7240"
+        },
+        {
+            "option_name": "APPLE",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "APPLE",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "APPLE",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "LIBPROJECTM": [
+        {
+            "package_actor_id": "8012"
+        },
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "8008",
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "GLEW": [
+        {
+            "package_actor_id": "8441"
+        },
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "8008",
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "glew32.dll": [
+        {
+            "package_actor_id": "8858"
+        },
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "8008",
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_NATIVE_GLEW",
+            "option_code": "set(USE_NATIVE_GLEW OFF)",
+            "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM']",
+            "actor_id": "8435",
+            "new_related_options": "HAVE_VISUALISATIONS USE_SYSTEM_PROJECTM",
+            "indirect_options": {
+                "USE_SYSTEM_PROJECTM": {
+                    "new_option_name": "USE_SYSTEM_PROJECTM",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+                            "new_reachability": "[]",
+                            "actor_id": "8008",
+                            "new_related_options": ""
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "FREETYPE2": [
+        {
+            "package_actor_id": "8902"
+        },
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "8008",
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_FTGL",
+            "option_code": "set(USE_FTGL OFF)",
+            "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM']",
+            "actor_id": "8431",
+            "new_related_options": "HAVE_VISUALISATIONS USE_SYSTEM_PROJECTM",
+            "indirect_options": {
+                "USE_SYSTEM_PROJECTM": {
+                    "new_option_name": "USE_SYSTEM_PROJECTM",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+                            "new_reachability": "[]",
+                            "actor_id": "8008",
+                            "new_related_options": ""
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "FTGL": [
+        {
+            "package_actor_id": "9310"
+        },
+        {
+            "option_name": "USE_SYSTEM_PROJECTM",
+            "option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "8008",
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "USE_FTGL",
+            "option_code": "set(USE_FTGL OFF)",
+            "reachability": "['HAVE_VISUALISATIONS', 'NOT (USE_SYSTEM_PROJECTM)', 'USE_SYSTEM_PROJECTM']",
+            "actor_id": "8431",
+            "new_related_options": "HAVE_VISUALISATIONS USE_SYSTEM_PROJECTM",
+            "indirect_options": {
+                "USE_SYSTEM_PROJECTM": {
+                    "new_option_name": "USE_SYSTEM_PROJECTM",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "option(USE_SYSTEM_PROJECTM \"Don't set this option unless your system projectM library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+                            "new_reachability": "[]",
+                            "actor_id": "8008",
+                            "new_related_options": ""
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "HAVE_VISUALISATIONS",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "QTSINGLEAPPLICATION_LIBRARIES": [
+        {
+            "package_actor_id": "9807"
+        },
+        {
+            "option_name": "USE_SYSTEM_QTSINGLEAPPLICATION",
+            "option_code": "option(USE_SYSTEM_QTSINGLEAPPLICATION \"Don't set this option unless your system QtSingleApplication library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "9804",
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "QTSINGLECOREAPPLICATION_LIBRARIES": [
+        {
+            "package_actor_id": "9808"
+        },
+        {
+            "option_name": "USE_SYSTEM_QTSINGLEAPPLICATION",
+            "option_code": "option(USE_SYSTEM_QTSINGLEAPPLICATION \"Don't set this option unless your system QtSingleApplication library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "9804",
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "QXT_LIBRARIES": [
+        {
+            "package_actor_id": "9841"
+        },
+        {
+            "option_name": "USE_SYSTEM_QXT",
+            "option_code": "option(USE_SYSTEM_QXT \"Don't set this option unless your system Qxt library has been compiled with the Clementine patches in 3rdparty\" OFF)",
+            "reachability": "[]",
+            "actor_id": "9836",
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "GTEST_LIBRARIES": [
+        {
+            "package_actor_id": "9870"
+        },
+        {
+            "option_name": "GMOCK_INCLUDE_DIRS",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "QJSON": [
+        {
+            "package_actor_id": "11456"
+        },
+        {
+            "option_name": "WIN32",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QJSON_LIBRARIES",
+            "option_code": "find_library(QJSON_LIBRARIES NAMES qjson PATHS ${QJSON_LIBRARY_DIRS} ${LIB_INSTALL_DIR} ${KDE4_LIB_DIR})",
+            "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES']",
+            "actor_id": "11864",
+            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES",
+            "indirect_options": {
+                "QJSON_LIBRARIES": {
+                    "new_option_name": "QJSON_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_library(QJSON_LIBRARIES NAMES qjson PATHS ${QJSON_LIBRARY_DIRS} ${LIB_INSTALL_DIR} ${KDE4_LIB_DIR})",
+                            "new_reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES']",
+                            "actor_id": "11864",
+                            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES"
+                        },
+                        {
+                            "new_option_code": "set(QJSON_LIBRARIES \"${QJSON_LIBRARIES}${QJSON_LDFLAGS}\" CACHE INTERNAL \"\")",
+                            "new_reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES', 'UNIX AND NOT APPLE']",
+                            "actor_id": "11869",
+                            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES UNIX APPLE"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "QJSON_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QJSON_LIBRARIES",
+            "option_code": "set(QJSON_LIBRARIES \"${QJSON_LIBRARIES}${QJSON_LDFLAGS}\" CACHE INTERNAL \"\")",
+            "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES', 'UNIX AND NOT APPLE']",
+            "actor_id": "11869",
+            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES UNIX APPLE",
+            "indirect_options": {
+                "QJSON_LIBRARIES": {
+                    "new_option_name": "QJSON_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_library(QJSON_LIBRARIES NAMES qjson PATHS ${QJSON_LIBRARY_DIRS} ${LIB_INSTALL_DIR} ${KDE4_LIB_DIR})",
+                            "new_reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES']",
+                            "actor_id": "11864",
+                            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES"
+                        },
+                        {
+                            "new_option_code": "set(QJSON_LIBRARIES \"${QJSON_LIBRARIES}${QJSON_LDFLAGS}\" CACHE INTERNAL \"\")",
+                            "new_reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES', 'UNIX AND NOT APPLE']",
+                            "actor_id": "11869",
+                            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES UNIX APPLE"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {}
+                    ]
+                }
+            }
+        }
+    ],
+    "qjson": [
+        {
+            "package_actor_id": "11864"
+        },
+        {
+            "option_name": "QJSON_LIBRARIES",
+            "option_code": "find_library(QJSON_LIBRARIES NAMES qjson PATHS ${QJSON_LIBRARY_DIRS} ${LIB_INSTALL_DIR} ${KDE4_LIB_DIR})",
+            "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES']",
+            "actor_id": "11864",
+            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES",
+            "indirect_options": {
+                "QJSON_LIBRARIES": {
+                    "new_option_name": "QJSON_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_library(QJSON_LIBRARIES NAMES qjson PATHS ${QJSON_LIBRARY_DIRS} ${LIB_INSTALL_DIR} ${KDE4_LIB_DIR})",
+                            "new_reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES']",
+                            "actor_id": "11864",
+                            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES"
+                        },
+                        {
+                            "new_option_code": "set(QJSON_LIBRARIES \"${QJSON_LIBRARIES}${QJSON_LDFLAGS}\" CACHE INTERNAL \"\")",
+                            "new_reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES', 'UNIX AND NOT APPLE']",
+                            "actor_id": "11869",
+                            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES UNIX APPLE"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {}
+                    ]
+                }
+            }
+        },
+        {
+            "option_name": "QJSON_INCLUDE_DIR",
+            "option_code": null,
+            "reachability": null,
+            "actor_id": null,
+            "new_related_options": "",
+            "indirect_options": {}
+        },
+        {
+            "option_name": "QJSON_LIBRARIES",
+            "option_code": "set(QJSON_LIBRARIES \"${QJSON_LIBRARIES}${QJSON_LDFLAGS}\" CACHE INTERNAL \"\")",
+            "reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES', 'UNIX AND NOT APPLE']",
+            "actor_id": "11869",
+            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES UNIX APPLE",
+            "indirect_options": {
+                "QJSON_LIBRARIES": {
+                    "new_option_name": "QJSON_LIBRARIES",
+                    "new_option_code_reachabilities": [
+                        {
+                            "new_option_code": "find_library(QJSON_LIBRARIES NAMES qjson PATHS ${QJSON_LIBRARY_DIRS} ${LIB_INSTALL_DIR} ${KDE4_LIB_DIR})",
+                            "new_reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES']",
+                            "actor_id": "11864",
+                            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES"
+                        },
+                        {
+                            "new_option_code": "set(QJSON_LIBRARIES \"${QJSON_LIBRARIES}${QJSON_LDFLAGS}\" CACHE INTERNAL \"\")",
+                            "new_reachability": "['NOT (QJSON_INCLUDE_DIR AND QJSON_LIBRARIES)', 'QJSON_INCLUDE_DIR AND QJSON_LIBRARIES', 'UNIX AND NOT APPLE']",
+                            "actor_id": "11869",
+                            "new_related_options": "QJSON_INCLUDE_DIR QJSON_LIBRARIES UNIX APPLE"
+                        }
+                    ],
+                    "new_indirect_options": [
+                        {},
+                        {}
+                    ]
+                }
+            }
+        }
+    ]
+}

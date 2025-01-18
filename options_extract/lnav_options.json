@@ -1,0 +1,15 @@
+{
+    "Python3": [
+        {
+            "package_actor_id": "244"
+        },
+        {
+            "option_name": "BUILD_MCSS_DOCS",
+            "option_code": "option(BUILD_MCSS_DOCS \"Build documentation using Doxygen and m.css\" OFF)",
+            "reachability": "[]",
+            "actor_id": "238",
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+num,dependency_name,related_options,original_reachability,actor_id
+1,Sanitizers,,[],118
+2,Boost,,[],130
+3,Lua,,[],132
+4,ZLIB,,[],133
+5,ICU,,[],134
+6,fmt,,[],135
+7,libdeflate,,[],136
+8,libxcrypt,,[],137
+9,Snappy,,[],138
+10,RapidJSON,,[],139
+11,xxHash,,[],140
+12,zstd,,[] or [],8471
+13,ANTLR3,,[],573
+14,Python3,,[],804
+15,cryptopp,,[] or [] or [],8459
+16,ragel,,[],1235
+17,jsoncpp,,[],1701
+18,rapidxml,,[],8291
+19,PkgConfig,,[] or [] or [] or [],8517
+20,PC_zstd,,[],8470
+21,PC_xxhash,,[],8492
+22,xxhash,,[],8493
+23,PC_deflate,,[],8505
+24,deflate,,[],8506
+25,PC_xcrypt,,[],8518
+26,crypt,,[],8519

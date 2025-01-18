@@ -1,0 +1,14 @@
+num,dependency_name,related_options,original_reachability,actor_id
+1,Boost,,[],13
+2,Python3,,[],16
+3,Qt5,,[],17
+4,Shiboken2,,[],18
+5,PySide2,,[],19
+6,glog,NATRON_SYSTEM_LIBS,['NATRON_SYSTEM_LIBS'],31
+7,Ceres,NATRON_SYSTEM_LIBS,['NATRON_SYSTEM_LIBS'],32
+8,ECM,UNIX APPLE,['UNIX AND NOT APPLE'],34
+9,X11,UNIX APPLE,['UNIX AND NOT APPLE'],36
+10,Wayland,UNIX APPLE,['UNIX AND NOT APPLE'],37
+11,EXPAT,,[],55
+12,Cairo,,[],65
+13,COREFOUNDATION_LIBRARY,APPLE,['APPLE'],99

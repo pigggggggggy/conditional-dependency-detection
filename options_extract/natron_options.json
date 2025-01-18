@@ -1,0 +1,28 @@
+{
+    "glog": [
+        {
+            "package_actor_id": "31"
+        },
+        {
+            "option_name": "NATRON_SYSTEM_LIBS",
+            "option_code": "option(NATRON_SYSTEM_LIBS \"use system versions of dependencies instead of bundled ones\" OFF)",
+            "reachability": "[]",
+            "actor_id": "4",
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ],
+    "Ceres": [
+        {
+            "package_actor_id": "32"
+        },
+        {
+            "option_name": "NATRON_SYSTEM_LIBS",
+            "option_code": "option(NATRON_SYSTEM_LIBS \"use system versions of dependencies instead of bundled ones\" OFF)",
+            "reachability": "[]",
+            "actor_id": "4",
+            "new_related_options": "",
+            "indirect_options": {}
+        }
+    ]
+}
