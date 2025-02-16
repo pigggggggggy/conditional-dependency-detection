@@ -1268,19 +1268,15 @@ class ConditionalDefUseChains(cm.ConditionalDefUseChains):
         actor_point = self.register_new_actor_point(node_data)
         self.generic_visit(node_data, actor_point)
 
-        # 获取 find_package 的参数
         arguments = self.get_sorted_arguments_data_list(node_data, "FIND_PACKAGE")
 
-        # 注册一个变量定义点 (VARIABLE)，并加上 _FOUND 后缀
         self.register_new_def_point(
             arguments[0], actor_point, "VARIABLE", suffix="_FOUND"
         )
 
-        # 如果当前模式是 'change_location'，直接返回
         if self.sysdiff.analysis_mode == "change_location":
             return
 
-        # 初始化模块模式和配置模式
         module_mode = True
         config_mode = True
 
@@ -1299,15 +1295,14 @@ class ConditionalDefUseChains(cm.ConditionalDefUseChains):
         ]
         keywords = basic_sig_keywords + full_sig_extra_keywords
 
-        # 用于标记解析是否已经完成
         resolution_fetched = False
 
         for i, argument in enumerate(arguments):
-            # 检查模块模式和配置模式
+
             if self.ast.unparse(argument).upper() == "MODULE":
                 module_mode = True
                 config_mode = False
-                # 解析 find_package 指定的文件路径
+
                 (
                     resolution_success,
                     found_files,
@@ -1348,41 +1343,34 @@ class ConditionalDefUseChains(cm.ConditionalDefUseChains):
                 module_mode = False
                 config_mode = True
 
-        # 如果没有获取到解析结果，则停止，并将 find_package 作为逻辑终点
         if not resolution_fetched:
-            return  # 将 find_package 作为逻辑终点
+            return 
 
-        # 处理解析失败的情况
         if not resolution_success or not found_files:
-            # 修改：无法找到引用时，登记 actor_point，并将类型设置为 built_in(integrated)
+
             actor_point.type = "built_in(integrated)"
             self.actor_points[actor_point.node_data["id"]].append(actor_point)
-            return  # 将 find_package 作为逻辑终点
+            return  
 
-        # 继续处理解析成功的情况
         if isinstance(found_files, str):
             if found_files.upper() == "SKIP":
                 return
             else:
                 raise Exception("File path resolution cannot be a string other than SKIP.")
 
-    # 如果找到多个文件，处理每个文件
         for resolution in found_files:
             if resolution == self.ast.file_path or (
                 node_data["id"]
                 in self.sysdiff.file_data[resolution]["language_specific_info"]["importers"]
             ):
-                continue  # 防止递归解析
+                continue 
         
-        # 如果文件的解析有效，继续解析文件内容
             self.ast = getattr(self.sysdiff.file_data[resolution]["diff"], self.ast.name)
             self.generic_visit(self.ast.get_data(self.ast.root))
             self.sysdiff.set_data_flow_file_analysis(self.ast.file_path, self.ast.name)
 
-        # 返回到上一个 AST 栈
         self.ast = self.ast_stack.pop()
 
-        # 如果当前操作是添加或删除，处理相关条件栈
         if node_data["operation"] in ["added", "deleted"]:
             self.remove_condition_from_reachability_stack()
 

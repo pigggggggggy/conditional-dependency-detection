@@ -1,0 +1,14 @@
+[
+    {
+        "full_name": "grpc/grpc",
+        "html_url": "https://github.com/grpc/grpc",
+        "default_branch": "master",
+        "latest_commit": "57a18b62ba471c25023ee651e806c3feff3196e9"
+    },
+    {
+        "full_name": "ClickHouse/ClickHouse",
+        "html_url": "https://github.com/ClickHouse/ClickHouse",
+        "default_branch": "master",
+        "latest_commit": "60655dc29a0c19206e83f2c493821715b5c2d940"
+    }
+]
