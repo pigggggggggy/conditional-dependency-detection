@@ -8,13 +8,13 @@ from tqdm.contrib.concurrent import thread_map
 # Configuration
 GITHUB_TOKEN = ""
 BASE_URL = "https://api.github.com/search/repositories"
-GRAPHQL_URL = "https://api.github.com/graphql"
 HEADERS = {
     "Authorization": f"Bearer {GITHUB_TOKEN}",
     "Accept": "application/vnd.github.v3+json",
 }
 MAX_REPOS = 1000
 MAX_WORKERS = 10  # 并发线程数
+OUTPUT_DIR = "../output/repo"  # 输出目录
 
 # 查询参数
 QUERY = "stars:>100 language:C++ language:C fork:false"
@@ -109,7 +109,7 @@ def process_repository(repo):
     # 获取最新commit
     commit_url = f"https://api.github.com/repos/{repo['full_name']}/commits/{repo['default_branch']}"
     response = safe_request(commit_url, HEADERS)
-    commit_hash = response.json()["sha"][:7] if response else None
+    commit_hash = response.json()["sha"] if response else None
 
     # 获取语言信息（二次验证）
     lang_response = safe_request(repo["languages_url"], HEADERS)
@@ -151,10 +151,10 @@ def main():
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
 
     # 保存结果
-    with open("cpp_repos.json", "w") as f:
+    with open(f"{OUTPUT_DIR}/cmake_repos.json", "w") as f:
         json.dump(valid_repos, f, indent=2)
 
-    with open("excluded_repos.json", "w") as f:
+    with open(f"{OUTPUT_DIR}/excluded_repos.json", "w") as f:
         json.dump(excluded_repos, f, indent=2)
 
     # 输出统计

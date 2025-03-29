@@ -1,0 +1,28 @@
+2025-03-29 14:11:29,483 [INFO] Loaded 11 repositories
+2025-03-29 14:11:29,484 [INFO] Processing repository: netdata/netdata
+2025-03-29 14:13:29,110 [INFO] Processing repository: swiftlang/swift
+2025-03-29 14:13:56,831 [ERROR] Error processing swiftlang/swift: Command '['python3', '/BuiScout/scout.py', 'run']' died with <Signals.SIGINT: 2>.
+Traceback (most recent call last):
+  File "/_BuiScout_mountpoint/scripts/operate.py", line 100, in process_single_repo
+    result = subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', '/BuiScout/scout.py', 'run']' died with <Signals.SIGINT: 2>.
+2025-03-29 14:13:56,834 [INFO] Processing repository: protocolbuffers/protobuf
+2025-03-29 14:15:42,191 [ERROR] Error processing protocolbuffers/protobuf: CSV file not found: /_BuiScout_mountpoint/output/buiscout_results/protocolbuffers_protobuf/protobuf_cmake_results/system_global/commits/5c91ab67f549d7901f60126aa542b111ad94ab8c/data_flow_output/destination_actor_points.csv
+Traceback (most recent call last):
+  File "/_BuiScout_mountpoint/scripts/operate.py", line 119, in process_single_repo
+    raise FileNotFoundError(f"CSV file not found: {csv_path}")
+FileNotFoundError: CSV file not found: /_BuiScout_mountpoint/output/buiscout_results/protocolbuffers_protobuf/protobuf_cmake_results/system_global/commits/5c91ab67f549d7901f60126aa542b111ad94ab8c/data_flow_output/destination_actor_points.csv
+2025-03-29 14:15:42,193 [INFO] Processing repository: tesseract-ocr/tesseract
+2025-03-29 14:15:48,104 [INFO] Total execution time: 258.62 seconds
+2025-03-29 14:23:37,941 [INFO] Loaded 11 repositories
+2025-03-29 14:23:37,942 [INFO] Processing repository: netdata/netdata
+2025-03-29 14:25:01,607 [INFO] Processing repository: swiftlang/swift
+2025-03-29 14:35:01,703 [ERROR] Timeout expired for swiftlang/swift
+2025-03-29 14:35:01,704 [INFO] Processing repository: protocolbuffers/protobuf
+2025-03-29 14:36:29,798 [INFO] Processing repository: tesseract-ocr/tesseract
+2025-03-29 14:37:01,552 [INFO] Processing repository: obsproject/obs-studio
+2025-03-29 14:41:33,289 [INFO] Processing repository: WerWolv/ImHex
+2025-03-29 14:43:05,442 [INFO] Processing repository: x64dbg/x64dbg
+2025-03-29 14:43:38,726 [INFO] Processing repository: nlohmann/json
