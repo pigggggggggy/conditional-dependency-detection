@@ -1,0 +1,9 @@
+.DS_Store
+.vscode
+build/
+tryouts*
+
+__pycache__
+
+# PyCharm IDE
+.idea
