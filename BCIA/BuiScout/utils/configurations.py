@@ -1,8 +1,11 @@
-import json5
-from pathlib import Path
-from functools import reduce
+import argparse
 import sys
-from .helpers import get_mountpoint, is_url, clone_repo
+from functools import reduce
+from pathlib import Path
+
+import json5
+
+from .helpers import clone_repo, get_mountpoint, is_url
 
 ROOT_PATH = Path(__file__).parent.parent
 # Appending root path to sys.path
@@ -11,12 +14,25 @@ sys.path.append(str(ROOT_PATH))
 
 mountpoint = get_mountpoint()
 
-if "test" in sys.argv:
-    with open(ROOT_PATH / "test/config.json", "r") as f:
-        config = json5.load(f)
-else:
-    with open(mountpoint / "config.json", "r") as f:
-        config = json5.load(f)
+# Set default config path based on whether we're in test mode
+config_path = (
+    ROOT_PATH / "test/config.json" if "test" in sys.argv else mountpoint / "config.json"
+)
+
+# Parse command line arguments
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--config",
+    "-c",
+    type=str,
+    default=str(config_path),
+    help="Path to the JSON configuration file.",
+)
+args, _ = parser.parse_known_args()
+
+# Load configuration
+with open(args.config, "r") as f:
+    config = json5.load(f)
 
 options = config["OPTIONS"]
 
@@ -46,29 +62,31 @@ PROJECT_MODEL = options["PROJECT_MODEL"]
 
 FILTERING = options["INITIALIZE_WITH_BUILD_COMMITS"]
 
-DATA_PATH = mountpoint / f'{config["RELATIVE_RESULT_PATH"]}'
+DATA_PATH = mountpoint / f"{config['RELATIVE_RESULT_PATH']}"
 PROJECT = config["PROJECT"]
+
+if isinstance(config.get("BRANCH"), str) and config.get("BRANCH").upper() == "ALL":
+    BRANCH = None
+else:
+    BRANCH = config.get("BRANCH")
+
+if isinstance(config.get("COMMITS"), str) and config.get("COMMITS").upper() == "ALL":
+    COMMITS = None
+else:
+    COMMITS = config.get("COMMITS")
+EXCLUDED_COMMITS = config.get("EXCLUDED_COMMITS")
 
 REPOSITORY = str(config["REPOSITORY"])
 if is_url(REPOSITORY):
     CLEAN_TRACES = True
-    clone_repo(REPOSITORY, mountpoint / f"{PROJECT}")
+    head_commit = clone_repo(REPOSITORY, mountpoint / f"{PROJECT}", BRANCH)
+    if head_commit and COMMITS is None:
+        COMMITS = [head_commit]
     REPOSITORY = str(mountpoint / f"{PROJECT}")
 else:
     CLEAN_TRACES = False
     REPOSITORY = str(mountpoint / f"{REPOSITORY}")
 
-
-if config["BRANCH"].upper() == "ALL":
-    BRANCH = None
-else:
-    BRANCH = config["BRANCH"]
-
-if isinstance(config["COMMITS"], str) and config["COMMITS"].upper() == "ALL":
-    COMMITS = None
-else:
-    COMMITS = config["COMMITS"]
-EXCLUDED_COMMITS = config["EXCLUDED_COMMITS"]
 
 BUILD_TECHNOLOGY = config["BUILD_TECHNOLOGY"].lower()
 ENTRY_FILES = config["ENTRY_FILES"]

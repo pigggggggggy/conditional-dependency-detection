@@ -201,7 +201,7 @@ def is_url(string):
         return False
 
 
-def clone_repo(repo_url, local_path):
+def clone_repo(repo_url, local_path, branch_name=None, depth=2) -> str:
     if Path(local_path).is_dir():
         print(
             f"The local directory {local_path} already exists. Deleting existing directory:"
@@ -210,12 +210,21 @@ def clone_repo(repo_url, local_path):
     print(
         f"Cloning repository {repo_url} for temporary use. This will be removed after the analysis is completed."
     )
+
+    # Configure the clone arguments
+    clone_kwargs = {"single_branch": True}
+    if branch_name:
+        clone_kwargs["branch"] = branch_name
+    if depth:
+        clone_kwargs["depth"] = depth
+
     try:
         # Clone the repository to the specified local path
-        Repo.clone_from(repo_url, local_path)
+        repo = Repo.clone_from(repo_url, local_path, **clone_kwargs)
         print(
             f"Repository cloned to {local_path}. This will be removed after the analysis is completed."
         )
+        return repo.head.commit.hexsha
     except Exception as e:
         print(f"Cloning faile due to this error: \n{e}")
 

@@ -1,6 +1,8 @@
+import argparse
+import pathlib
+
+from command_options import how_to_setup_BuiScout
 from utils.helpers import get_mountpoint
-import sys, pathlib, argparse
-from command_options import how_to_setup_BuiScout, build_msg
 
 ROOT_PATH = pathlib.Path(__file__).parent
 
@@ -32,7 +34,7 @@ run_parser = command_parser.add_parser(
     help="Runs BuiScout on the configurations and repositories passed to it in the <[BuiScout_ROOT_DIR_PARENT]/_BuiScout_mountpoint> directory (created by the 'init' option). This will be the volume you mounted on the container if you are running BuiScout in a Docker container.",
 )
 
-args = parser.parse_args()
+args, _ = parser.parse_known_args()
 
 if __name__ == "__main__":
     mountpoint = get_mountpoint()
