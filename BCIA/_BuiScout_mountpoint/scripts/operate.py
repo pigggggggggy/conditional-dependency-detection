@@ -1,32 +1,40 @@
 import json
 import logging
-import shutil
 import os
-from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from copy import deepcopy
+import shutil
 import subprocess
 import time
+from copy import deepcopy
+from pathlib import Path
+from tqdm.contrib.concurrent import thread_map
 
 # 配置参数
-MAX_WORKERS = 1
+MAX_WORKERS = 8
 MOUNT_POINT = Path("/_BuiScout_mountpoint")
-KEEP_ARTIFACTS = True
-TIMEOUT = 600
+KEEP_ARTIFACTS = False
+TIMEOUT = 60 * 60
 
 # 路径配置
 BUISCOUT_RESULTS_RELATIVE_PATH = "output/buiscout_results"
 BUISCOUT_RESULTS_DIR = MOUNT_POINT / BUISCOUT_RESULTS_RELATIVE_PATH
 CMAKE_REPO_FILE = MOUNT_POINT / "output" / "repo" / "cmake_repos.json"
 CONFIG_FILE = MOUNT_POINT / "config.json"
+CONFIG_FOLDER = MOUNT_POINT / "buiscout_config"
 EXTRACT_SCRIPT = Path("extract_dependencies.py").resolve()
 EXTRACT_RESULTS_DIR = MOUNT_POINT / "output" / "extraction_results"
+LOG_DIR = MOUNT_POINT / "log"
 
 # 日志配置
+LOG_DIR.mkdir(parents=True, exist_ok=True)
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[logging.FileHandler("processing.log"), logging.StreamHandler()],
+    handlers=[
+        logging.FileHandler(
+            f"{LOG_DIR}/{os.path.basename(__file__)}_{time.strftime('%Y%m%d_%H%M%S')}.log"
+        ),
+        logging.StreamHandler(),
+    ],
 )
 logger = logging.getLogger(__name__)
 
@@ -87,29 +95,49 @@ def process_single_repo(repo_data: dict, base_config: dict) -> bool:
                 "PROJECT": repo_name_path,
                 "REPOSITORY": f"{repo_data['html_url']}.git",
                 "BRANCH": repo_data["default_branch"],
-                "COMMITS": [repo_data["latest_commit"]],
             }
         )
 
         # 保存配置文件
-        with open(CONFIG_FILE, "w") as f:
+        repo_config_path = CONFIG_FOLDER / f"{repo_name_path}.json"
+        with open(repo_config_path, "w") as f:
             json.dump(config, f, indent=2)
+        logger.debug(f"Configuration saved for {repo_name}: {repo_config_path}")
 
         # 执行 scount run 命令
         logger.debug(f"Executing scout run for {repo_name}")
-        test_cmd = ["python3", "/BuiScout/scout.py", "run"]
+        cmd = [
+            "python3",
+            "/BuiScout/scout.py",
+            "run",
+            f"-c={repo_config_path}",
+        ]
+        logger.debug(f"Scout run command: {' '.join(cmd)}")
         result = subprocess.run(
-            test_cmd,
+            cmd,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             timeout=TIMEOUT,
             check=True,
             text=True,
         )
-        logger.debug(f"Scout run output: {result.stdout[:500]}...")  # 仅打印前500个字符
+        logger.debug("Scout run output:")
+        logger.debug(result.stdout)
 
         # 构建文件路径
-        commit_id = repo_data["latest_commit"]
+        cmake_results_dir = (
+            output_dir / f"{repo_name_path}_cmake_results" / "system_global" / "commits"
+        )
+        commit_ids = [
+            d
+            for d in os.listdir(cmake_results_dir)
+            if os.path.isdir(cmake_results_dir / d)
+        ]
+        commit_id = next((commit for commit in commit_ids if len(commit) == 40), None)
+        if not commit_id:
+            raise RuntimeError(f"No valid commit ID found in {cmake_results_dir}")
+        logger.debug(f"Using commit ID: {commit_id}")
+
         csv_path = (
             output_dir
             / f"{repo_name_path}_cmake_results/system_global/commits/{commit_id}/data_flow_output/destination_actor_points.csv"
@@ -154,6 +182,7 @@ def main():
 
     # 准备结果目录
     BUISCOUT_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    CONFIG_FOLDER.mkdir(parents=True, exist_ok=True)
     EXTRACT_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
     # 加载数据
@@ -162,22 +191,29 @@ def main():
     logger.info(f"Loaded {len(repos)} repositories")
 
     # 并行处理
-    success_count = 0
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = {
-            executor.submit(process_single_repo, repo, base_config): repo
-            for repo in repos
-        }
+    logger.info(f"Processing {len(repos)} repositories with {MAX_WORKERS} workers")
 
-        for future in as_completed(futures):
-            repo = futures[future]
-            try:
-                if future.result():
-                    success_count += 1
-            except Exception as e:
-                logger.error(
-                    f"Task exception for {repo['full_name']}: {str(e)}", exc_info=True
-                )
+    # Define a wrapper function to pass to thread_map
+    def process_repo(repo):
+        try:
+            return process_single_repo(repo, base_config)
+        except Exception as e:
+            logger.error(
+                f"Task exception for {repo['full_name']}: {str(e)}", exc_info=True
+            )
+            return False
+
+    # Use thread_map with tqdm progress bar
+    results = thread_map(
+        process_repo,
+        repos,
+        max_workers=MAX_WORKERS,
+        desc="Processing repositories",
+        unit="repo",
+    )
+
+    # Count successful operations
+    success_count = sum(1 for result in results if result)
 
     # Generate report
     logger.info("\nProcessing Completion Report:")

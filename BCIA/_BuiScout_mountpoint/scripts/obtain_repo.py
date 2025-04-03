@@ -106,11 +106,6 @@ def process_repository(repo):
     response = safe_request(cmake_url, HEADERS)
     has_cmake = response.status_code == 200 if response else False
 
-    # 获取最新commit
-    commit_url = f"https://api.github.com/repos/{repo['full_name']}/commits/{repo['default_branch']}"
-    response = safe_request(commit_url, HEADERS)
-    commit_hash = response.json()["sha"] if response else None
-
     # 获取语言信息（二次验证）
     lang_response = safe_request(repo["languages_url"], HEADERS)
     languages = lang_response.json().keys() if lang_response else []
@@ -118,7 +113,6 @@ def process_repository(repo):
     return {
         **repo,
         "has_cmake": has_cmake,
-        "latest_commit": commit_hash,
         "languages": list(languages),
         "is_valid": has_cmake and ("C" in languages or "C++" in languages),
     }
